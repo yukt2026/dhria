@@ -587,59 +587,71 @@ img {
     text-transform: uppercase;
     box-shadow: 0 4px 15px rgba(184, 139, 74, 0.25);
 }
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-}
 
 .botanical-showcase-section {
     background: #FFFFFF;
 }
 
 .botanical-cutout-link {
-    padding: 12px 8px;
-    transition: transform 0.25s ease;
+    padding: 16px 12px;
+    border-radius: 8px;
+    background: #FFFFFF;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .botanical-cutout-link:hover {
-    transform: translateY(-4px);
+    transform: translateY(-5px);
+    border-color: var(--floramad-border);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
 }
 
 .botanical-cutout-img-box {
-    width: 135px;
-    height: 135px;
-    margin: 0 auto 8px;
+    width: 175px;
+    height: 175px;
+    margin: 0 auto 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #FAFBF9;
+    background: #FAF9F6;
     border-radius: 50%;
-    padding: 12px;
-    transition: all 0.3s ease;
+    padding: 16px;
+    border: 1px solid #ECEEE8;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .botanical-cutout-link:hover .botanical-cutout-img-box {
-    background: #EEF3EA;
-    box-shadow: 0 6px 18px rgba(74, 107, 54, 0.12);
+    background: #FAF5EB;
+    border-color: var(--floramad-gold);
+    box-shadow: 0 8px 22px rgba(184, 139, 74, 0.18);
 }
 
 .botanical-cutout-img-box img {
     max-width: 100%;
     max-height: 100%;
+    width: auto;
+    height: auto;
     object-fit: contain;
     mix-blend-mode: multiply;
-    transition: transform 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.06));
 }
 
 .botanical-cutout-link:hover .botanical-cutout-img-box img {
-    transform: scale(1.14);
+    transform: scale(1.15);
 }
 
 .botanical-cutout-title {
     font-family: var(--font-serif);
-    font-size: 15px;
+    font-size: 16.5px;
     font-weight: 600;
     color: var(--floramad-slate);
-    margin-bottom: 2px;
+    margin-bottom: 3px;
+    transition: color 0.2s ease;
+}
+
+.botanical-cutout-link:hover .botanical-cutout-title {
+    color: var(--floramad-gold);
 }
 
 .botanical-cutout-latin {
@@ -1710,16 +1722,17 @@ img {
         padding: 35px 0;
     }
 
-    /* Botanical Cutouts Grid */
+    /* Botanical Cutouts Grid on Mobile */
     .botanical-cutout-img-box {
-        width: 75px;
-        height: 75px;
+        width: 135px;
+        height: 135px;
+        padding: 12px;
     }
     .botanical-cutout-title {
-        font-size: 13.5px;
+        font-size: 14.5px;
     }
     .botanical-cutout-latin {
-        font-size: 11px;
+        font-size: 11.5px;
     }
 
     /* CSR 4 Numbers Container */
@@ -1783,6 +1796,12 @@ img {
     }
     .brand-tagline-sub {
         display: none !important;
+    }
+
+    .botanical-cutout-img-box {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
     }
 
     /* Product Cards: 2-column compact layout on phones */

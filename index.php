@@ -97,7 +97,7 @@ require_once __DIR__ . '/includes/header.php';
             ?>
             <div class="col">
                 <a href="products.php#<?= htmlspecialchars($item['id']); ?>" class="botanical-cutout-link d-block text-decoration-none">
-                    <div class="botanical-cutout-img-box mb-2">
+                    <div class="botanical-cutout-img-box mb-3">
                         <img src="<?= htmlspecialchars($item['image']); ?>" alt="<?= htmlspecialchars($item['title']); ?>" class="img-fluid" loading="lazy">
                     </div>
                     <span class="botanical-cutout-title d-block"><?= htmlspecialchars($item['title']); ?></span>
