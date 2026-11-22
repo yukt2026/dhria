@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500">
+  <rect width="900" height="500" fill="#f8faf6"/>
+  <!-- Stylized Continents -->
+  <g fill="#d8e2d2" stroke="#ffffff" stroke-width="1.5">
+    <!-- North America -->
+    <path d="M120 80 Q180 60 250 90 T320 160 T250 240 T150 200 Z"/>
+    <!-- South America -->
+    <path d="M220 260 Q270 270 290 330 T250 440 T190 360 Z"/>
+    <!-- Europe -->
+    <path d="M420 80 Q490 70 540 100 T530 160 T450 160 Z"/>
+    <!-- Africa -->
+    <path d="M430 180 Q510 180 540 250 T510 380 T440 340 T410 240 Z"/>
+    <!-- Asia -->
+    <path d="M540 90 Q650 70 780 110 T820 220 T680 260 T560 170 Z"/>
+    <!-- Australia -->
+    <path d="M700 320 Q770 310 800 360 T740 430 T670 370 Z"/>
+    <!-- Madagascar island -->
+    <path d="M565 305 Q575 300 580 325 T570 365 T558 335 Z" fill="#4a6b36"/>
+  </g>
+  <!-- Flight / Sea routes from Hub -->
+  <g fill="none" stroke="#b88b4a" stroke-width="2.5" stroke-dasharray="6,4">
+    <!-- Route to Europe (Paris/Frankfurt) -->
+    <path d="M570 325 Q550 200 480 120"/>
+    <!-- Route to North America (New York) -->
+    <path d="M570 325 Q380 200 240 140"/>
+    <!-- Route to Asia (Tokyo/Singapore) -->
+    <path d="M570 325 Q680 260 740 160"/>
+    <!-- Route to Middle East (Dubai) -->
+    <path d="M570 325 Q570 240 550 190"/>
+    <!-- Route to Australia -->
+    <path d="M570 325 Q650 360 720 360"/>
+  </g>
+  <!-- Air and Sea nodes -->
+  <circle cx="570" cy="325" r="8" fill="#4a6b36" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="480" cy="120" r="6" fill="#b88b4a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="240" cy="140" r="6" fill="#b88b4a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="740" cy="160" r="6" fill="#b88b4a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="550" cy="190" r="6" fill="#b88b4a" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="720" cy="360" r="6" fill="#b88b4a" stroke="#ffffff" stroke-width="2"/>
+  <!-- Airplane icon at Europe route -->
+  <path d="M510 160 l8 -3 l2 -8 l3 8 l8 3 l-8 3 l-3 8 l-2 -8 Z" fill="#4a6b36"/>
+  <!-- Destination Labels -->
+  <text x="480" y="105" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#2d3436" text-anchor="middle">EUROPE</text>
+  <text x="240" y="125" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#2d3436" text-anchor="middle">NORTH AMERICA</text>
+  <text x="740" y="145" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#2d3436" text-anchor="middle">ASIA PACIFIC</text>
+  <text x="575" y="380" font-family="'Helvetica Neue', Arial, sans-serif" font-size="13" font-weight="800" fill="#4a6b36" text-anchor="middle">DHURIA PRODUCTION ORIGIN</text>
+</svg>

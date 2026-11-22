@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 100" width="150" height="100">
+  <rect width="150" height="100" rx="8" fill="#4caf50"/>
+  <!-- Leaf made of 12 stars -->
+  <g fill="#ffffff">
+    <circle cx="75" cy="22" r="3"/>
+    <circle cx="92" cy="28" r="3"/>
+    <circle cx="106" cy="40" r="3"/>
+    <circle cx="112" cy="56" r="3"/>
+    <circle cx="102" cy="72" r="3"/>
+    <circle cx="85" cy="80" r="3"/>
+    <circle cx="65" cy="80" r="3"/>
+    <circle cx="48" cy="72" r="3"/>
+    <circle cx="38" cy="56" r="3"/>
+    <circle cx="44" cy="40" r="3"/>
+    <circle cx="58" cy="28" r="3"/>
+    <circle cx="75" cy="50" r="3"/>
+  </g>
+</svg>

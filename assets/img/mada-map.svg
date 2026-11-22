@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 160" width="80" height="128" fill="none">
+  <!-- Madagascar Silhouette in White -->
+  <path d="M42 16 C50 14, 58 22, 56 32 C54 42, 50 52, 48 64 C46 76, 42 88, 38 100 C34 112, 30 126, 26 138 C23 144, 20 140, 20 134 C20 122, 24 108, 27 94 C30 80, 33 66, 36 50 C38 34, 34 22, 42 16 Z" fill="#ffffff" stroke="#e0e0e0" stroke-width="0.8"/>
+  <!-- Highlighted Harvest Region Oval -->
+  <ellipse cx="44" cy="68" rx="8" ry="16" fill="none" stroke="#4a6b36" stroke-width="2.2"/>
+</svg>

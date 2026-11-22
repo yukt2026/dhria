@@ -1,0 +1,1675 @@
+/* ==========================================================================
+   FLORAMAD / DHURIA LUXURY BOTANICAL STYLESHEET
+   High-Fidelity Corporate Design matching Floramad.com
+   Fully Responsive for All Devices (Mobile, Tablet, Desktop)
+   ========================================================================== */
+
+:root {
+    --floramad-green: #4A6B36;
+    --floramad-green-dark: #375326;
+    --floramad-green-light: #5B8144;
+    --floramad-green-tint: #EEF3EA;
+    --floramad-gold: #B88B4A;
+    --floramad-gold-dark: #976F32;
+    --floramad-gold-tint: #FAF5EB;
+    --floramad-slate: #1B2421;
+    --floramad-dark: #222B26;
+    --floramad-body: #3D473F;
+    --floramad-muted: #6B776D;
+    --floramad-bg-light: #F4F6F2;
+    --floramad-bg-footer: #ECEEEA;
+    --floramad-border: #DCE2D8;
+    --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+    --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* Global Reset & Base */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--floramad-body);
+    background-color: #FFFFFF;
+    line-height: 1.65;
+    font-size: 15px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6, .font-serif {
+    font-family: var(--font-serif);
+    color: var(--floramad-slate);
+    font-weight: 600;
+}
+
+.font-sans {
+    font-family: var(--font-sans);
+}
+
+a {
+    color: var(--floramad-green);
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+a:hover {
+    color: var(--floramad-gold);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Subtle image hover zoom wrapper */
+.img-zoom-wrapper {
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.img-zoom-wrapper img {
+    transition: transform 0.4s ease;
+}
+
+.img-zoom-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+/* ==========================================================================
+   HEADER & NAVBAR
+   ========================================================================== */
+
+.site-header {
+    background: #FFFFFF;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    z-index: 1030;
+    transition: box-shadow 0.2s ease;
+}
+
+.brand-logo-img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    transition: height 0.2s ease;
+}
+
+.brand-tagline-sub {
+    font-family: var(--font-sans);
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--floramad-gold);
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.navbar .nav-link {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+    color: #4A4A4A !important;
+    padding: 8px 12px !important;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--floramad-gold) !important;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 12px;
+    right: 12px;
+    height: 2px;
+    background-color: var(--floramad-gold);
+}
+
+.dropdown-menu {
+    border: 1px solid var(--floramad-border) !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
+}
+
+.dropdown-item {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 500;
+    color: #4A4A4A;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: var(--floramad-green-tint);
+    color: var(--floramad-green);
+}
+
+.lang-flags {
+    padding-left: 15px;
+    border-left: 1px solid var(--floramad-border);
+}
+
+.lang-flag {
+    display: inline-flex;
+    align-items: center;
+    opacity: 0.85;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.lang-flag:hover,
+.lang-flag.active {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
+
+.btn-floramad-green {
+    background-color: var(--floramad-green);
+    color: #FFFFFF !important;
+    border: 1px solid var(--floramad-green);
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 8px 22px;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+}
+
+.btn-floramad-green:hover {
+    background-color: var(--floramad-green-dark);
+    border-color: var(--floramad-green-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(74, 107, 54, 0.25);
+}
+
+.btn-floramad-gold {
+    background-color: var(--floramad-gold);
+    color: #FFFFFF !important;
+    border: 1px solid var(--floramad-gold);
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 8px 22px;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    min-height: 40px;
+}
+
+.btn-floramad-gold:hover {
+    background-color: var(--floramad-gold-dark);
+    border-color: var(--floramad-gold-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(184, 139, 74, 0.25);
+}
+
+.btn-floramad-outline-gold {
+    background: transparent;
+    color: var(--floramad-gold) !important;
+    border: 1.5px solid var(--floramad-gold);
+    font-family: var(--font-sans);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 6px 18px;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+    min-height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-floramad-outline-gold:hover {
+    background: var(--floramad-gold);
+    color: #FFFFFF !important;
+}
+
+/* ==========================================================================
+   PAGE HERO BANNERS
+   ========================================================================== */
+
+.page-hero-banner {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-hero-banner {
+    min-height: 520px;
+    background-position: center 35%;
+}
+
+.page-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20, 28, 22, 0.35) 0%, rgba(20, 28, 22, 0.55) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-banner-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.8rem, 4.5vw, 3.2rem);
+    color: #FFFFFF;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    line-height: 1.25;
+}
+
+/* Products 6-Slice Botanical Collage Banner (Exact Floramad Image 4) */
+.products-collage-banner {
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-collage-grid {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.collage-slice {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.collage-slice:last-child {
+    border-right: none;
+}
+
+/* Page Sub-Header Strip */
+.page-title-strip {
+    background-color: var(--floramad-green);
+    color: #FFFFFF;
+    padding: 16px 0;
+    text-align: center;
+}
+
+.page-title-strip h1 {
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* ==========================================================================
+   HOME PAGE: SECTION 1 (PRODUCING NATURAL INGREDIENTS)
+   ========================================================================== */
+
+.home-intro-section {
+    padding: 60px 0;
+    background: #FFFFFF;
+}
+
+.section-gold-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 2.8vw, 2.1rem);
+    font-weight: 600;
+    color: var(--floramad-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.home-intro-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   HOME PAGE: SECTION 2 (SPLIT 3-COLUMN FEATURE BLOCK)
+   ========================================================================== */
+
+.feature-split-block {
+    background-color: #FAFAFA;
+}
+
+.split-dark-box {
+    background-color: var(--floramad-slate);
+    color: #FFFFFF;
+    padding: 50px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.split-dark-title {
+    color: #FFFFFF;
+    font-family: var(--font-sans);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+}
+
+.split-dark-text {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #E0E6E2;
+    margin-bottom: 16px;
+}
+
+.split-gold-box {
+    background-color: var(--floramad-gold);
+    color: #FFFFFF;
+    padding: 50px 35px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.split-gold-text {
+    font-family: var(--font-sans);
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.split-arrow-box {
+    width: 38px;
+    height: 38px;
+    border: 1.5px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 14px;
+    transition: all 0.25s ease;
+}
+
+.split-arrow-box:hover {
+    background: #FFFFFF;
+    color: var(--floramad-gold);
+    transform: translateX(4px);
+}
+
+.split-photo-box {
+    height: 100%;
+    min-height: 360px;
+}
+
+.split-photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ==========================================================================
+   BOTANICAL SHOWCASE SECTION ("DISCOVER OUR ESSENTIAL OILS")
+   ========================================================================== */
+
+.floramad-green-bar {
+    background-color: var(--floramad-green);
+    color: #FFFFFF;
+    padding: 14px 20px;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.botanical-showcase-section {
+    background: #FFFFFF;
+}
+
+.botanical-cutout-link {
+    padding: 12px 8px;
+    transition: transform 0.25s ease;
+}
+
+.botanical-cutout-link:hover {
+    transform: translateY(-4px);
+}
+
+.botanical-cutout-img-box {
+    width: 95px;
+    height: 95px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botanical-cutout-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    transition: transform 0.3s ease;
+}
+
+.botanical-cutout-link:hover .botanical-cutout-img-box img {
+    transform: scale(1.1);
+}
+
+.botanical-cutout-title {
+    font-family: var(--font-serif);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--floramad-slate);
+    margin-bottom: 2px;
+}
+
+.botanical-cutout-latin {
+    font-size: 12px;
+    color: var(--floramad-muted);
+}
+
+/* ==========================================================================
+   TOWARDS RESPONSIBLE APPROACH (SUSTAINABILITY / CSR)
+   ========================================================================== */
+
+.responsible-approach-section {
+    background: var(--floramad-bg-light);
+}
+
+.responsible-approach-img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   NEWS SECTION (HOME CARDS & TIMELINE)
+   ========================================================================== */
+
+.news-section-title {
+    text-align: center;
+    font-family: var(--font-serif);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--floramad-slate);
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.home-news-card {
+    background: #FFFFFF;
+    border: 1px solid var(--floramad-border);
+    border-radius: 6px;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+    transition: all 0.25s ease;
+}
+
+.home-news-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.home-news-img-box {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.home-news-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.home-news-card:hover .home-news-img-box img {
+    transform: scale(1.05);
+}
+
+.home-news-body {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.home-news-date {
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--floramad-gold);
+    margin-bottom: 8px;
+}
+
+.home-news-title {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--floramad-slate);
+    line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.home-news-excerpt {
+    font-size: 13.5px;
+    color: var(--floramad-muted);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.news-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #B5BFB2;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.news-dot.active {
+    background-color: var(--floramad-green);
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   NEWS TIMELINE PAGE (news.php)
+   ========================================================================== */
+
+.news-timeline-container {
+    position: relative;
+    padding: 40px 0;
+}
+
+.news-timeline-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: var(--floramad-green);
+    transform: translateX(-50%);
+}
+
+.timeline-row {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.timeline-badge-center {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    transform: translate(-50%, -50%);
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 2px solid var(--floramad-green);
+    color: var(--floramad-green);
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-card {
+    background: #FFFFFF;
+    border: 1px solid var(--floramad-border);
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.25s ease;
+}
+
+.timeline-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-card img {
+    border-radius: 4px;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+/* ==========================================================================
+   OUR PARTNERS & CERTIFICATIONS
+   ========================================================================== */
+
+.partners-section {
+    padding: 50px 0;
+    background: #FFFFFF;
+    border-top: 1px solid var(--floramad-border);
+}
+
+.partners-section-title {
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--floramad-slate);
+    margin-bottom: 35px;
+}
+
+.partner-logo-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+}
+
+.partner-logo-item img {
+    max-height: 55px;
+    max-width: 120px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+.partner-logo-item img:hover {
+    transform: scale(1.08);
+}
+
+/* ==========================================================================
+   CALLOUT BANNER ("FEEL FREE TO CONTACT US")
+   ========================================================================== */
+
+.feel-free-contact-section {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feel-free-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(18, 25, 20, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+}
+
+.contact-callout-card {
+    background: rgba(22, 32, 25, 0.72);
+    backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 4px;
+    padding: 40px 50px;
+    max-width: 620px;
+    width: 100%;
+}
+
+.contact-callout-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.8rem, 3.5vw, 2.3rem);
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-callout-subtitle {
+    color: #E6EFE5;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.contact-callout-btn {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-width: 1.5px;
+    padding: 9px 28px;
+    border-radius: 3px;
+    transition: all 0.25s ease;
+}
+
+.contact-callout-btn:hover {
+    background: #FFFFFF;
+    color: var(--floramad-slate) !important;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.site-footer {
+    background-color: var(--floramad-bg-footer);
+    color: var(--floramad-body);
+    border-top: 1px solid var(--floramad-border);
+}
+
+.footer-logo {
+    max-height: 48px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.footer-desc {
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+
+.footer-contact-list li {
+    font-size: 13.5px;
+}
+
+.footer-icon {
+    font-size: 16px;
+    color: var(--floramad-green);
+}
+
+.footer-widget-title {
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--floramad-slate);
+}
+
+.flyer-thumb {
+    max-width: 140px;
+    border-radius: 3px;
+    border: 1px solid var(--floramad-border);
+    transition: transform 0.25s ease;
+}
+
+.flyer-thumb:hover {
+    transform: scale(1.04);
+}
+
+.footer-divider {
+    border-color: var(--floramad-border);
+    opacity: 0.6;
+}
+
+.footer-social-squares .social-sq {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    font-size: 15px;
+    border-radius: 3px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.social-in { background-color: #0A66C2; }
+.social-fb { background-color: #1877F2; }
+.social-wa { background-color: #25D366; }
+
+.footer-social-squares .social-sq:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+/* ==========================================================================
+   WHO WE ARE PAGE (about.php)
+   ========================================================================== */
+
+.stat-card-floramad {
+    padding: 10px 0;
+}
+
+.stat-icon-wrapper img {
+    max-width: 52px;
+    height: auto;
+}
+
+.stat-card-title {
+    font-family: var(--font-sans);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--floramad-slate);
+    margin-bottom: 6px;
+    line-height: 1.35;
+}
+
+.stat-card-list {
+    font-size: 13px;
+    color: var(--floramad-muted);
+}
+
+.stat-card-list li {
+    margin-bottom: 3px;
+}
+
+.csr-commitments-block {
+    background-color: var(--floramad-green);
+    color: #FFFFFF;
+    padding: 60px 0;
+}
+
+.csr-commitments-title {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.csr-number-box {
+    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    padding: 30px 22px;
+    text-align: center;
+    height: 100%;
+    transition: all 0.25s ease;
+}
+
+.csr-number-box:hover {
+    border-color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.08);
+    transform: translateY(-3px);
+}
+
+.csr-num {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.csr-box-text {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #F0F4EE;
+    margin: 0;
+}
+
+/* ==========================================================================
+   OUR ACTIVITIES PAGE (activities.php)
+   ========================================================================== */
+
+.activity-section {
+    padding: 50px 0;
+    border-bottom: 1px solid var(--floramad-border);
+}
+
+.activity-section:last-child {
+    border-bottom: none;
+}
+
+.activity-title {
+    font-family: var(--font-serif);
+    font-size: clamp(1.6rem, 2.5vw, 2.1rem);
+    font-weight: 600;
+    color: var(--floramad-gold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.activity-lead {
+    font-size: 15.5px;
+    font-weight: 500;
+    color: var(--floramad-slate);
+    line-height: 1.6;
+    margin-bottom: 14px;
+}
+
+.activity-desc {
+    font-size: 14.5px;
+    color: var(--floramad-body);
+    line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.activity-img-wrapper {
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.activity-img-wrapper img {
+    height: 380px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.activity-img-wrapper:hover img {
+    transform: scale(1.03);
+}
+
+.activity-more-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(4px);
+    border: 1px solid #FFFFFF;
+    color: var(--floramad-slate);
+    font-family: var(--font-sans);
+    font-size: 11.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 6px 18px;
+    border-radius: 3px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.activity-more-btn:hover {
+    background: var(--floramad-green);
+    color: #FFFFFF;
+    border-color: var(--floramad-green);
+}
+
+/* ==========================================================================
+   OUR PRODUCTS PAGE (products.php)
+   ========================================================================== */
+
+.product-catalog-card {
+    background: #FFFFFF;
+    border: 1px solid var(--floramad-border);
+    border-radius: 4px;
+    padding: 24px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.25s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+}
+
+.product-catalog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    border-color: var(--floramad-gold);
+}
+
+.product-img-box {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-img-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.product-title {
+    font-family: var(--font-serif);
+    font-size: 16.5px;
+    font-weight: 600;
+    color: var(--floramad-gold);
+    line-height: 1.3;
+    margin-bottom: 4px;
+}
+
+.product-botanical-name {
+    font-size: 13px;
+    font-style: italic;
+    color: var(--floramad-muted);
+}
+
+.product-certifications {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.product-cert-badge {
+    height: 20px;
+    width: auto;
+    object-fit: contain;
+}
+
+.spec-quote-btn {
+    font-family: var(--font-sans);
+    font-size: 11.5px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Category Filter Tabs with smooth scroll */
+.filter-tabs-wrapper {
+    width: 100%;
+}
+
+.filter-tabs-scroll {
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.filter-tabs-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.filter-btn {
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    border: 1.5px solid var(--floramad-border);
+    color: var(--floramad-body);
+    background: #FFFFFF;
+    padding: 7px 20px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: var(--floramad-green);
+    border-color: var(--floramad-green);
+    color: #FFFFFF;
+}
+
+/* ==========================================================================
+   CONTACT PAGE (contact.php)
+   ========================================================================== */
+
+.contact-form-card {
+    background: #FFFFFF;
+    border: 1px solid var(--floramad-border);
+    border-radius: 6px;
+    padding: 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form-label {
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 6px;
+}
+
+.contact-form-control {
+    border: 1px solid #D5DBD2;
+    border-radius: 4px;
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-form-control:focus {
+    border-color: var(--floramad-green);
+    box-shadow: 0 0 0 3px rgba(74, 107, 54, 0.15);
+    outline: none;
+}
+
+.contact-info-panel {
+    padding: 15px 0;
+}
+
+.contact-info-title {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--floramad-slate);
+    margin-bottom: 6px;
+}
+
+.contact-info-text {
+    font-size: 14px;
+    color: var(--floramad-muted);
+    line-height: 1.6;
+    margin-bottom: 22px;
+}
+
+/* ==========================================================================
+   PRODUCT DETAIL MODAL (Exact match to User Reference Images 1 & 2)
+   ========================================================================== */
+
+.modal-product-dialog {
+    max-width: 860px;
+}
+
+.modal-product-content {
+    border: none;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+}
+
+.modal-product-header {
+    background-color: var(--floramad-green);
+    color: #FFFFFF;
+    padding: 14px 24px;
+    border-bottom: none;
+    border-radius: 0;
+}
+
+.modal-product-title {
+    font-family: var(--font-sans);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.modal-product-body {
+    padding: 30px 24px;
+    color: #333333;
+}
+
+/* Left Column: Technical Data Grid */
+.product-spec-table {
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+
+.spec-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.spec-label {
+    width: 175px;
+    flex-shrink: 0;
+    font-weight: 500;
+    color: #333333;
+}
+
+.spec-colon {
+    margin-right: 10px;
+    color: #333333;
+}
+
+.spec-value {
+    flex-grow: 1;
+    color: #2b2b2b;
+}
+
+.spec-value.italic {
+    font-style: italic;
+}
+
+/* Harvest Calendar Months row */
+.harvest-calendar-strip {
+    display: inline-flex;
+    gap: 8px;
+    font-family: var(--font-sans);
+    font-size: 13.5px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.harvest-month {
+    color: #B5BFB2;
+    transition: all 0.2s ease;
+}
+
+.harvest-month.active {
+    color: #1B2421;
+    font-weight: 800;
+    text-shadow: 0 0 1px rgba(0,0,0,0.4);
+}
+
+/* Uses and Functions bullet list */
+.uses-functions-list {
+    margin: 6px 0 0 0;
+    padding-left: 18px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: #444444;
+}
+
+.uses-functions-list li {
+    margin-bottom: 3px;
+}
+
+/* Right Column: Visual Showcase & Terroir Panel */
+.modal-visual-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+}
+
+.modal-product-botanical-card {
+    background: #FFFFFF;
+    border: 1px solid var(--floramad-border);
+    border-radius: 4px;
+    padding: 14px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.modal-botanical-composite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    min-height: 155px;
+}
+
+.modal-plant-img {
+    max-height: 140px;
+    max-width: 65%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.modal-amber-bottle {
+    max-height: 130px;
+    width: auto;
+    object-fit: contain;
+}
+
+.modal-cert-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.modal-cert-row img {
+    height: 38px;
+    width: auto;
+    object-fit: contain;
+}
+
+.modal-cert-organic-label {
+    font-size: 9px;
+    line-height: 1.2;
+    color: #555555;
+    font-family: var(--font-sans);
+    font-weight: 600;
+}
+
+/* Gold Terroir & Madagascar Map Panel */
+.modal-terroir-gold-box {
+    background-color: var(--floramad-gold);
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 140px;
+}
+
+.modal-mada-map {
+    height: 120px;
+    width: auto;
+}
+
+.modal-qr-box {
+    background: #FFFFFF;
+    padding: 4px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.modal-qr-box img {
+    width: 44px;
+    height: 44px;
+    display: block;
+}
+
+/* ==========================================================================
+   COMPREHENSIVE ALL-DEVICE MOBILE & TABLET RESPONSIVE SYSTEM
+   ========================================================================== */
+
+/* Tablet & Mobile Screens (<= 991.98px) */
+@media (max-width: 991.98px) {
+    /* Header & Navigation */
+    .site-header {
+        padding: 2px 0;
+    }
+    .brand-logo-img {
+        height: 40px;
+    }
+    .brand-tagline-sub {
+        font-size: 8.5px;
+        letter-spacing: 0.5px;
+    }
+    .navbar-collapse {
+        background: #FFFFFF;
+        padding: 15px 20px 20px;
+        border-top: 1px solid var(--floramad-border);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        margin-top: 8px;
+        border-radius: 0 0 6px 6px;
+    }
+    .navbar .nav-link {
+        padding: 12px 0 !important;
+        border-bottom: 1px solid #F0F2EE;
+        font-size: 13.5px;
+    }
+    .navbar .nav-link.active::after {
+        display: none;
+    }
+    .border-top-mobile {
+        border-top: 1px solid var(--floramad-border);
+    }
+
+    /* 3-Column Split Block on Mobile */
+    .split-dark-box, .split-gold-box {
+        padding: 35px 24px;
+    }
+    .split-photo-box {
+        min-height: 260px;
+    }
+
+    /* Activities Sections */
+    .activity-section {
+        padding: 35px 0;
+    }
+    .activity-img-wrapper img {
+        height: 280px;
+    }
+
+    /* Timeline on Tablet/Mobile */
+    .news-timeline-container::before {
+        left: 20px;
+        transform: none;
+    }
+    .timeline-badge-center {
+        left: 20px;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        font-size: 9.5px;
+    }
+    .timeline-col-left, .timeline-col-right {
+        padding-left: 55px !important;
+        padding-right: 0 !important;
+    }
+    .timeline-card {
+        padding: 18px;
+    }
+    .timeline-card img {
+        height: 180px;
+    }
+
+    /* Product Modal on Tablet/Mobile */
+    .modal-product-dialog {
+        margin: 15px auto;
+        max-width: calc(100% - 30px);
+    }
+    .modal-product-body {
+        padding: 20px 16px;
+    }
+    .spec-row {
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+    .spec-label {
+        width: 100%;
+        font-weight: 700;
+        margin-bottom: 2px;
+    }
+    .spec-colon {
+        display: none;
+    }
+}
+
+/* Smartphone Screens (<= 767.98px) */
+@media (max-width: 767.98px) {
+    /* Hero Banner */
+    .home-hero-banner {
+        min-height: 320px;
+    }
+    .page-hero-banner, .products-collage-banner {
+        min-height: 250px;
+    }
+    .hero-banner-title {
+        font-size: 1.65rem;
+    }
+    .collage-slice:nth-child(n+4) {
+        display: none;
+    }
+
+    /* Section Headings */
+    .section-gold-heading {
+        font-size: 1.55rem;
+        margin-bottom: 14px;
+    }
+    .news-section-title {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
+
+    /* Image Heights */
+    .home-intro-img, .responsible-approach-img {
+        height: 240px;
+    }
+    .home-intro-section {
+        padding: 35px 0;
+    }
+
+    /* Botanical Cutouts Grid */
+    .botanical-cutout-img-box {
+        width: 75px;
+        height: 75px;
+    }
+    .botanical-cutout-title {
+        font-size: 13.5px;
+    }
+    .botanical-cutout-latin {
+        font-size: 11px;
+    }
+
+    /* CSR 4 Numbers Container */
+    .csr-commitments-block {
+        padding: 35px 0;
+    }
+    .csr-commitments-title {
+        font-size: 13.5px;
+        margin-bottom: 25px;
+    }
+    .csr-number-box {
+        padding: 20px 15px;
+    }
+    .csr-num {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+    }
+
+    /* Callout Banner */
+    .feel-free-contact-section {
+        min-height: 280px;
+    }
+    .contact-callout-card {
+        padding: 25px 18px;
+    }
+    .contact-callout-title {
+        font-size: 1.6rem;
+    }
+    .contact-callout-subtitle {
+        font-size: 13.5px;
+        margin-bottom: 18px;
+    }
+
+    /* Forms on Mobile: Crucial 16px to prevent iOS auto-zoom */
+    .contact-form-card {
+        padding: 20px 15px;
+    }
+    .contact-form-control {
+        font-size: 16px;
+    }
+
+    /* Footer on Mobile */
+    .site-footer {
+        text-align: center;
+    }
+    .footer-contact-list li {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-social-squares {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* Small Smartphone Screens (<= 575.98px) */
+@media (max-width: 575.98px) {
+    /* Brand logo on small phones */
+    .brand-logo-img {
+        height: 36px;
+    }
+    .brand-tagline-sub {
+        display: none !important;
+    }
+
+    /* Product Cards: 2-column compact layout on phones */
+    .product-catalog-card {
+        padding: 14px 10px;
+    }
+    .product-img-box {
+        width: 80px;
+        height: 80px;
+    }
+    .product-title {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+    .product-botanical-name {
+        font-size: 11px;
+        margin-bottom: 8px !important;
+    }
+    .product-cert-badge {
+        height: 16px;
+    }
+    .spec-quote-btn {
+        font-size: 10.5px;
+        padding: 4px 6px;
+    }
+
+    /* Product Modal on Small Screens */
+    .modal-product-dialog {
+        margin: 8px;
+        max-width: calc(100% - 16px);
+    }
+    .modal-product-header {
+        padding: 12px 16px;
+    }
+    .modal-product-title {
+        font-size: 14px;
+    }
+    .modal-product-body {
+        padding: 16px 12px;
+    }
+    .harvest-calendar-strip {
+        font-size: 11.5px;
+        gap: 5px;
+    }
+    .modal-botanical-composite {
+        min-height: 120px;
+    }
+    .modal-plant-img {
+        max-height: 95px;
+    }
+    .modal-amber-bottle {
+        max-height: 90px;
+    }
+    .modal-terroir-gold-box {
+        padding: 12px;
+        min-height: 110px;
+    }
+    .modal-mada-map {
+        height: 85px;
+    }
+    .modal-qr-box img {
+        width: 36px;
+        height: 36px;
+    }
+
+    /* Buttons Full Width on Smallest Screens */
+    .home-intro-section .btn-floramad-green {
+        width: 100%;
+    }
+}

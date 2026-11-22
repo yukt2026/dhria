@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <circle cx="60" cy="60" r="56" fill="#ffffff" stroke="#e53935" stroke-width="3"/>
+  <circle cx="60" cy="60" r="50" fill="#ffffff" stroke="#e53935" stroke-width="1" stroke-dasharray="2,2"/>
+  <text x="60" y="55" font-family="'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="900" fill="#c62828" text-anchor="middle" letter-spacing="1">ECOCERT</text>
+  <path d="M35 68 C45 60, 75 60, 85 68 C75 75, 45 75, 35 68 Z" fill="#e53935"/>
+  <text x="60" y="85" font-family="'Helvetica Neue', Arial, sans-serif" font-size="7.5" font-weight="700" fill="#c62828" text-anchor="middle" letter-spacing="0.5">ORGANIC</text>
+</svg>
