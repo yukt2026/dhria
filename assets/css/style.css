@@ -5,20 +5,26 @@
    ========================================================================== */
 
 :root {
-    --floramad-green: #4A6B36;
-    --floramad-green-dark: #375326;
-    --floramad-green-light: #5B8144;
-    --floramad-green-tint: #EEF3EA;
+    /* Refined Luxury Botanical Palette matching Floramad (Honey Gold + Slate Charcoal + Pearl Ivory) */
     --floramad-gold: #B88B4A;
     --floramad-gold-dark: #976F32;
-    --floramad-gold-tint: #FAF5EB;
+    --floramad-gold-light: #CFA665;
+    --floramad-gold-tint: #FAF6EE;
     --floramad-slate: #1B2421;
-    --floramad-dark: #222B26;
-    --floramad-body: #3D473F;
-    --floramad-muted: #6B776D;
-    --floramad-bg-light: #F4F6F2;
-    --floramad-bg-footer: #ECEEEA;
-    --floramad-border: #DCE2D8;
+    --floramad-slate-light: #28342F;
+    --floramad-dark: #121815;
+    --floramad-body: #333333;
+    --floramad-muted: #666B66;
+    --floramad-bg-light: #F7F8F5;
+    --floramad-bg-footer: #EBECE8;
+    --floramad-border: #DFE2DC;
+
+    /* Green color overridden to warm gold & slate per customer requirement (No Green) */
+    --floramad-green: #B88B4A;
+    --floramad-green-dark: #976F32;
+    --floramad-green-light: #CFA665;
+    --floramad-green-tint: #FAF6EE;
+}
     --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
     --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -222,9 +228,13 @@ img {
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-    background-color: var(--floramad-green-tint);
-    color: var(--floramad-green);
+    background-color: var(--floramad-gold-tint);
+    color: var(--floramad-gold);
     padding-left: 22px;
+}
+
+.text-gold {
+    color: var(--floramad-gold) !important;
 }
 
 /* Language Flags Container */
@@ -280,10 +290,11 @@ img {
    BUTTONS
    ========================================================================== */
 
-.btn-floramad-green {
-    background-color: var(--floramad-green);
+.btn-floramad-green,
+.btn-floramad-gold {
+    background-color: var(--floramad-gold);
     color: #FFFFFF !important;
-    border: 1px solid var(--floramad-green);
+    border: 1px solid var(--floramad-gold);
     font-family: var(--font-sans);
     font-size: 12.5px;
     font-weight: 600;
@@ -298,17 +309,18 @@ img {
     min-height: 40px;
 }
 
-.btn-floramad-green:hover {
-    background-color: var(--floramad-green-dark);
-    border-color: var(--floramad-green-dark);
+.btn-floramad-green:hover,
+.btn-floramad-gold:hover {
+    background-color: var(--floramad-gold-dark);
+    border-color: var(--floramad-gold-dark);
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(74, 107, 54, 0.25);
+    box-shadow: 0 4px 12px rgba(184, 139, 74, 0.25);
 }
 
-.btn-floramad-gold {
-    background-color: var(--floramad-gold);
+.btn-floramad-dark {
+    background-color: var(--floramad-slate);
     color: #FFFFFF !important;
-    border: 1px solid var(--floramad-gold);
+    border: 1px solid var(--floramad-slate);
     font-family: var(--font-sans);
     font-size: 12.5px;
     font-weight: 600;
@@ -317,16 +329,21 @@ img {
     padding: 8px 22px;
     border-radius: 3px;
     transition: all 0.25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     min-height: 40px;
 }
 
-.btn-floramad-gold:hover {
-    background-color: var(--floramad-gold-dark);
-    border-color: var(--floramad-gold-dark);
+.btn-floramad-dark:hover {
+    background-color: var(--floramad-gold);
+    border-color: var(--floramad-gold);
+    color: #FFFFFF !important;
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(184, 139, 74, 0.25);
 }
 
+.btn-outline-gold,
 .btn-floramad-outline-gold {
     background: transparent;
     color: var(--floramad-gold) !important;
@@ -345,9 +362,14 @@ img {
     justify-content: center;
 }
 
+.btn-outline-gold:hover,
 .btn-floramad-outline-gold:hover {
     background: var(--floramad-gold);
     color: #FFFFFF !important;
+    border-color: var(--floramad-gold);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(184, 139, 74, 0.2);
+}
 }
 
 /* ==========================================================================
@@ -420,14 +442,15 @@ img {
 
 /* Page Sub-Header Strip */
 .page-title-strip {
-    background-color: var(--floramad-green);
+    background: linear-gradient(135deg, #1B2421 0%, #28342F 100%);
+    border-bottom: 2px solid var(--floramad-gold);
     color: #FFFFFF;
     padding: 16px 0;
     text-align: center;
 }
 
 .page-title-strip h1 {
-    color: #FFFFFF;
+    color: var(--floramad-gold);
     font-family: var(--font-sans);
     font-size: 15px;
     font-weight: 700;
@@ -553,13 +576,17 @@ img {
    ========================================================================== */
 
 .floramad-green-bar {
-    background-color: var(--floramad-green);
+    background-color: var(--floramad-gold);
     color: #FFFFFF;
     padding: 14px 20px;
     text-align: center;
     font-family: var(--font-sans);
     font-size: 14px;
     font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(184, 139, 74, 0.25);
+}
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -729,7 +756,7 @@ img {
 }
 
 .news-dot.active {
-    background-color: var(--floramad-green);
+    background-color: var(--floramad-gold);
     transform: scale(1.2);
 }
 
@@ -749,7 +776,7 @@ img {
     bottom: 0;
     left: 50%;
     width: 2px;
-    background-color: var(--floramad-green);
+    background-color: var(--floramad-gold);
     transform: translateX(-50%);
 }
 
@@ -767,8 +794,8 @@ img {
     height: 52px;
     border-radius: 50%;
     background: #FFFFFF;
-    border: 2px solid var(--floramad-green);
-    color: var(--floramad-green);
+    border: 2px solid var(--floramad-gold);
+    color: var(--floramad-gold);
     font-family: var(--font-sans);
     font-size: 11px;
     font-weight: 700;
@@ -1017,24 +1044,27 @@ img {
 }
 
 .csr-commitments-block {
-    background-color: var(--floramad-green);
+    background: linear-gradient(135deg, #1B2421 0%, #25312B 100%);
+    border-top: 3px solid var(--floramad-gold);
+    border-bottom: 3px solid var(--floramad-gold);
     color: #FFFFFF;
     padding: 60px 0;
 }
 
 .csr-commitments-title {
-    color: #FFFFFF;
+    color: var(--floramad-gold);
     text-align: center;
     font-family: var(--font-sans);
     font-size: 15px;
     font-weight: 700;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     text-transform: uppercase;
     margin-bottom: 40px;
 }
 
 .csr-number-box {
-    border: 1.5px solid rgba(255, 255, 255, 0.7);
+    border: 1.5px solid rgba(184, 139, 74, 0.45);
+    background: rgba(255, 255, 255, 0.03);
     border-radius: 8px;
     padding: 30px 22px;
     text-align: center;
@@ -1043,8 +1073,8 @@ img {
 }
 
 .csr-number-box:hover {
-    border-color: #FFFFFF;
-    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--floramad-gold);
+    background: rgba(184, 139, 74, 0.08);
     transform: translateY(-3px);
 }
 
@@ -1052,7 +1082,7 @@ img {
     font-family: var(--font-serif);
     font-size: 2.8rem;
     font-weight: 700;
-    color: #FFFFFF;
+    color: var(--floramad-gold);
     line-height: 1;
     margin-bottom: 15px;
 }
@@ -1060,7 +1090,7 @@ img {
 .csr-box-text {
     font-size: 13px;
     line-height: 1.55;
-    color: #F0F4EE;
+    color: #E2E6E2;
     margin: 0;
 }
 
@@ -1140,9 +1170,9 @@ img {
 }
 
 .activity-more-btn:hover {
-    background: var(--floramad-green);
+    background: var(--floramad-gold);
     color: #FFFFFF;
-    border-color: var(--floramad-green);
+    border-color: var(--floramad-gold);
 }
 
 /* ==========================================================================
@@ -1269,8 +1299,8 @@ img {
 
 .filter-btn:hover,
 .filter-btn.active {
-    background-color: var(--floramad-green);
-    border-color: var(--floramad-green);
+    background-color: var(--floramad-gold);
+    border-color: var(--floramad-gold);
     color: #FFFFFF;
 }
 
@@ -1303,8 +1333,8 @@ img {
 }
 
 .contact-form-control:focus {
-    border-color: var(--floramad-green);
-    box-shadow: 0 0 0 3px rgba(74, 107, 54, 0.15);
+    border-color: var(--floramad-gold);
+    box-shadow: 0 0 0 3px rgba(184, 139, 74, 0.15);
     outline: none;
 }
 
@@ -1346,10 +1376,10 @@ img {
 }
 
 .modal-product-header {
-    background-color: var(--floramad-green);
+    background-color: var(--floramad-slate);
+    border-bottom: 2px solid var(--floramad-gold);
     color: #FFFFFF;
-    padding: 14px 24px;
-    border-bottom: none;
+    padding: 16px 24px;
     border-radius: 0;
 }
 
@@ -1357,9 +1387,9 @@ img {
     font-family: var(--font-sans);
     font-size: 17px;
     font-weight: 700;
-    letter-spacing: 0.8px;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--floramad-gold);
     margin: 0;
 }
 
@@ -1566,7 +1596,7 @@ img {
     }
     .navbar .nav-link.active {
         color: var(--floramad-gold) !important;
-        background-color: var(--floramad-green-tint);
+        background-color: var(--floramad-gold-tint);
         border-radius: 4px;
     }
     .navbar .nav-link .nav-text::after {
@@ -1821,6 +1851,8 @@ img {
     }
 
     /* Buttons Full Width on Smallest Screens */
+    .home-intro-section .btn-floramad-gold,
+    .home-intro-section .btn-floramad-dark,
     .home-intro-section .btn-floramad-green {
         width: 100%;
     }

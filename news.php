@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/header.php';
                                 </a>
                             </h3>
                             <p class="home-news-excerpt"><?= htmlspecialchars($item['excerpt']); ?></p>
-                            <a href="news-detail.php?id=<?= htmlspecialchars($item['id']); ?>" class="btn btn-floramad-green btn-sm px-3 py-1">
+                            <a href="news-detail.php?id=<?= htmlspecialchars($item['id']); ?>" class="btn btn-floramad-gold btn-sm px-3 py-1">
                                 Read more
                             </a>
                         </div>
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/header.php';
                                 </a>
                             </h3>
                             <p class="home-news-excerpt"><?= htmlspecialchars($item['excerpt']); ?></p>
-                            <a href="news-detail.php?id=<?= htmlspecialchars($item['id']); ?>" class="btn btn-floramad-green btn-sm px-3 py-1">
+                            <a href="news-detail.php?id=<?= htmlspecialchars($item['id']); ?>" class="btn btn-floramad-gold btn-sm px-3 py-1">
                                 Read more
                             </a>
                         </div>

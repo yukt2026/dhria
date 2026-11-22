@@ -41,9 +41,9 @@ require_once __DIR__ . '/includes/header.php';
 
                     <!-- Meta Information -->
                     <div class="d-flex align-items-center gap-3 text-muted small mb-4 pb-3 border-bottom">
-                        <span><i class="bi bi-calendar3 me-1 text-success"></i><?= htmlspecialchars($article['date']); ?></span>
-                        <span><i class="bi bi-geo-alt me-1 text-success"></i><?= htmlspecialchars($article['subtitle']); ?></span>
-                        <span><i class="bi bi-tag me-1 text-success"></i>International Trade &amp; Expo</span>
+                        <span><i class="bi bi-calendar3 me-1 text-gold"></i><?= htmlspecialchars($article['date']); ?></span>
+                        <span><i class="bi bi-geo-alt me-1 text-gold"></i><?= htmlspecialchars($article['subtitle']); ?></span>
+                        <span><i class="bi bi-tag me-1 text-gold"></i>International Trade &amp; Expo</span>
                     </div>
 
                     <!-- Article Paragraphs -->
@@ -100,7 +100,7 @@ require_once __DIR__ . '/includes/header.php';
                     <!-- Sidebar Download CTA -->
                     <div class="sidebar-flyer-box mt-4 pt-3 text-center">
                         <img src="assets/img/flyer-preview.jpg" alt="Catalogue" class="img-fluid rounded shadow-sm mb-3" style="max-height: 180px;">
-                        <button type="button" class="btn btn-floramad-green btn-sm w-100" data-bs-toggle="modal" data-bs-target="#flyerModal">
+                        <button type="button" class="btn btn-floramad-gold btn-sm w-100" data-bs-toggle="modal" data-bs-target="#flyerModal">
                             Download Our Catalogue
                         </button>
                     </div>

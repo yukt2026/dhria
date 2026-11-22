@@ -107,7 +107,7 @@ require_once __DIR__ . '/data.php';
                 <img src="assets/img/flyer-preview.jpg" alt="Dhuria Product Flyer" class="img-fluid rounded mb-3 shadow-sm" style="max-height: 480px;">
                 <p class="text-muted">Our complete technical specifications, GC-MS profiles, and organic certification credentials for international export.</p>
                 <div class="d-flex justify-content-center gap-3 mt-3">
-                    <a href="assets/img/flyer-preview.jpg" download="Dhuria-Floramad-Catalogue.jpg" class="btn btn-floramad-green px-4 py-2">
+                    <a href="assets/img/flyer-preview.jpg" download="Dhuria-Floramad-Catalogue.jpg" class="btn btn-floramad-dark px-4 py-2">
                         <i class="bi bi-download me-2"></i>Download PDF / Flyer
                     </a>
                     <a href="contact.php?subject=Request+Price+List" class="btn btn-floramad-gold px-4 py-2">

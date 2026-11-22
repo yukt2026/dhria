@@ -59,7 +59,7 @@ $selected_category = isset($_GET['category']) ? strtolower(trim($_GET['category'
                             <img src="assets/img/certifications/eu-organic.svg" alt="EU Organic" class="product-cert-badge" title="EU Organic">
                             <img src="assets/img/certifications/ecocert.svg" alt="Ecocert" class="product-cert-badge" title="Ecocert Organic">
                         </div>
-                        <button type="button" class="btn btn-outline-success btn-sm w-100 py-1 spec-quote-btn">
+                        <button type="button" class="btn btn-outline-gold btn-sm w-100 py-1 spec-quote-btn">
                             View Spec
                         </button>
                     </div>
@@ -68,9 +68,9 @@ $selected_category = isset($_GET['category']) ? strtolower(trim($_GET['category'
             <?php endforeach; ?>
         </div>
 
-        <!-- Green Button: "OUR QUALITY MANAGEMENT" as seen in Floramad reference -->
+        <!-- Button: "OUR QUALITY MANAGEMENT" as seen in Floramad reference -->
         <div class="text-center mt-4 mt-lg-5 pt-3" id="quality">
-            <a href="activities.php#processing" class="btn btn-floramad-green px-4 px-md-5 py-2 py-md-3">
+            <a href="activities.php#processing" class="btn btn-floramad-gold px-4 px-md-5 py-2 py-md-3">
                 OUR QUALITY MANAGEMENT
             </a>
         </div>
@@ -163,7 +163,7 @@ $selected_category = isset($_GET['category']) ? strtolower(trim($_GET['category'
                         </div>
 
                         <div class="mt-4 pt-3 border-top">
-                            <a href="#" id="mInquiryBtn" class="btn btn-floramad-green w-100 py-2">
+                            <a href="#" id="mInquiryBtn" class="btn btn-floramad-gold w-100 py-2">
                                 <i class="bi bi-envelope me-2"></i>Inquire About This Product
                             </a>
                         </div>
@@ -175,7 +175,7 @@ $selected_category = isset($_GET['category']) ? strtolower(trim($_GET['category'
                             <!-- White Botanical Cutout & Amber Bottle Box with Logo -->
                             <div class="modal-product-botanical-card text-center">
                                 <div class="d-flex justify-content-end mb-1">
-                                    <img src="assets/img/logo.jpg" alt="Dhuria Logo" style="height: 22px; mix-blend-mode: multiply;">
+                                    <img src="assets/img/logo-dhuria.png" alt="Dhuria Logo" style="height: 22px;">
                                 </div>
                                 <div class="modal-botanical-composite">
                                     <img src="assets/img/products/rose-geranium.jpg" id="mPlantImg" alt="Botanical Plant" class="modal-plant-img">

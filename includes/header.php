@@ -9,7 +9,7 @@ $page_title = isset($page_title) ? $page_title . ' — ' . $brand['name'] : $bra
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <title><?= htmlspecialchars($page_title); ?></title>
     <meta name="description" content="<?= htmlspecialchars($brand['description']); ?>">
-    <meta name="theme-color" content="#4A6B36">
+    <meta name="theme-color" content="#B88B4A">
 
     <!-- Google Fonts: Elegant botanical luxury & clean modern sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,10 +58,10 @@ $page_title = isset($page_title) ? $page_title . ' — ' . $brand['name'] : $bra
                             <span class="nav-text">OUR PRODUCTS</span>
                         </a>
                         <ul class="dropdown-menu border-0 shadow mt-2 rounded-2 py-2" aria-labelledby="productsNavDropdown">
-                            <li><a class="dropdown-item py-2 px-3" href="products.php"><i class="bi bi-flower1 me-2 text-success"></i>Our essential oils</a></li>
-                            <li><a class="dropdown-item py-2 px-3" href="products.php?category=vegetable"><i class="bi bi-droplet me-2 text-success"></i>Our vegetable oils</a></li>
+                            <li><a class="dropdown-item py-2 px-3" href="products.php"><i class="bi bi-flower1 me-2 text-gold"></i>Our essential oils</a></li>
+                            <li><a class="dropdown-item py-2 px-3" href="products.php?category=vegetable"><i class="bi bi-droplet me-2 text-gold"></i>Our vegetable oils</a></li>
                             <li><hr class="dropdown-divider my-1"></li>
-                            <li><a class="dropdown-item py-2 px-3" href="products.php#quality"><i class="bi bi-shield-check me-2 text-success"></i>Quality Management</a></li>
+                            <li><a class="dropdown-item py-2 px-3" href="products.php#quality"><i class="bi bi-shield-check me-2 text-gold"></i>Quality Management</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">

@@ -32,8 +32,8 @@ require_once __DIR__ . '/includes/header.php';
                     Thanks to its multi-disciplinary skills combining agronomic techniques, distillation know-how, and strict quality control, we produce premium quality essential oils with amazing properties.
                 </p>
                 <div class="d-flex flex-wrap gap-3">
-                    <a href="about.php" class="btn btn-floramad-green">Learn more</a>
-                    <button type="button" class="btn btn-floramad-green" data-bs-toggle="modal" data-bs-target="#flyerModal">
+                    <a href="about.php" class="btn btn-floramad-gold">Learn more</a>
+                    <button type="button" class="btn btn-floramad-dark" data-bs-toggle="modal" data-bs-target="#flyerModal">
                         Download our flyer
                     </button>
                 </div>
@@ -121,7 +121,7 @@ require_once __DIR__ . '/includes/header.php';
                 <p class="text-muted mb-4" style="line-height: 1.8;">
                     By partnering directly with over 40 smallholder farming families, providing fair wages, organic cultivation training, and community infrastructure, DHURIA bridges rural Malagasy agriculture directly with international conscious cosmetic brands.
                 </p>
-                <a href="news.php" class="btn btn-floramad-green">Read all news</a>
+                <a href="news.php" class="btn btn-floramad-gold">Read all news</a>
             </div>
             <div class="col-lg-6 col-12">
                 <div class="img-zoom-wrapper">
@@ -151,7 +151,7 @@ require_once __DIR__ . '/includes/header.php';
                         <h3 class="home-news-title"><?= htmlspecialchars($post['title']); ?></h3>
                         <p class="home-news-excerpt"><?= htmlspecialchars($post['excerpt']); ?></p>
                         <div class="mt-auto">
-                            <a href="news-detail.php?id=<?= htmlspecialchars($post['id']); ?>" class="btn btn-floramad-green btn-sm px-3 py-1">Learn more</a>
+                            <a href="news-detail.php?id=<?= htmlspecialchars($post['id']); ?>" class="btn btn-floramad-gold btn-sm px-3 py-1">Learn more</a>
                         </div>
                     </div>
                 </div>

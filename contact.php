@@ -74,7 +74,7 @@ $prefill_subject = isset($_GET['subject']) ? trim($_GET['subject']) : '';
                             </div>
 
                             <div class="col-12 mt-4">
-                                <button type="submit" id="submitBtn" class="btn btn-secondary px-5 py-2" style="background-color: #ECEEEA; color: #444; border: 1px solid #D2D8CF; font-weight: 600;">
+                                <button type="submit" id="submitBtn" class="btn btn-floramad-gold px-5 py-2">
                                     Send
                                 </button>
                             </div>
@@ -97,12 +97,12 @@ $prefill_subject = isset($_GET['subject']) ? trim($_GET['subject']) : '';
                     <div class="mb-4">
                         <h4 class="contact-info-title">Phone number</h4>
                         <p class="contact-info-text mb-1">
-                            <a href="tel:+919318445297" class="text-decoration-none fw-bold" style="color: var(--floramad-green); font-size: 1.15rem;">
+                            <a href="tel:+919318445297" class="text-decoration-none fw-bold" style="color: var(--floramad-gold); font-size: 1.15rem;">
                                 <i class="bi bi-telephone-fill me-2"></i>+91 9318445297
                             </a>
                         </p>
                         <p class="contact-info-text mb-1">
-                            <a href="https://wa.me/919318445297" target="_blank" rel="noopener" class="text-decoration-none text-success">
+                            <a href="https://wa.me/919318445297" target="_blank" rel="noopener" class="text-decoration-none" style="color: #25D366; font-weight: 500;">
                                 <i class="bi bi-whatsapp me-2"></i>WhatsApp: +91 9318445297
                             </a>
                         </p>

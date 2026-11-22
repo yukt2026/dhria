@@ -93,7 +93,7 @@ require_once __DIR__ . '/includes/header.php';
     </div>
 </section>
 
-<!-- 5. Areas of Commitment to CSR (Dark Olive Green Block with 4 Numbered White Outline Boxes) -->
+<!-- 5. Areas of Commitment to CSR (Deep Slate Block with Gold Accents & 4 Numbered Outline Boxes) -->
 <section class="csr-commitments-block">
     <div class="container">
         <h3 class="csr-commitments-title">OUR AREAS OF COMMITMENT TO CSR</h3>

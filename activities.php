@@ -33,9 +33,9 @@ require_once __DIR__ . '/includes/header.php';
                     Owning some cultivation and picking sites, as well as working closely with farmers and local producers, Flora-of-Madagascar ensures the planting of aromatic raw materials that we will use for essential oils extraction.
                 </p>
                 <div class="activity-meta-pills d-flex flex-wrap gap-2 mt-3">
-                    <span class="badge bg-light text-dark border"><i class="bi bi-geo-alt text-success me-1"></i>180 ha Plantation</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-flower1 text-success me-1"></i>Native AMP Cultivars</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-people text-success me-1"></i>40+ Smallholder Cooperatives</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-geo-alt text-gold me-1"></i>180 ha Plantation</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-flower1 text-gold me-1"></i>Native AMP Cultivars</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-people text-gold me-1"></i>40+ Smallholder Cooperatives</span>
                 </div>
             </div>
         </div>
@@ -59,9 +59,9 @@ require_once __DIR__ . '/includes/header.php';
                     The essential oils collected are fully pure, without technological additives or preservatives. Slow distillation under calibrated low vapor pressure guarantees preservation of delicate volatile fragrance compounds and complete therapeutic profiles.
                 </p>
                 <div class="activity-meta-pills d-flex flex-wrap gap-2 mt-3">
-                    <span class="badge bg-light text-dark border"><i class="bi bi-droplet-half text-success me-1"></i>Steam Distillation</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-shield-check text-success me-1"></i>100% Pure &amp; Natural</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-clipboard2-check text-success me-1"></i>GC-MS Lab Tested</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-droplet-half text-gold me-1"></i>Steam Distillation</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-shield-check text-gold me-1"></i>100% Pure &amp; Natural</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-clipboard2-check text-gold me-1"></i>GC-MS Lab Tested</span>
                 </div>
             </div>
         </div>
@@ -85,9 +85,9 @@ require_once __DIR__ . '/includes/header.php';
                     They are stored in a well-ventilated and dark place, away from direct sunlight and heat sources. Clean nitrogen blanketing is systematically applied to the headspace of drums to prevent oxidation during storage and long-distance sea/air transit.
                 </p>
                 <div class="activity-meta-pills d-flex flex-wrap gap-2 mt-3">
-                    <span class="badge bg-light text-dark border"><i class="bi bi-box-seam text-success me-1"></i>HDPE EU Drums (20kg &amp; 200kg)</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-thermometer-half text-success me-1"></i>Dark Climate Storage</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-qr-code text-success me-1"></i>Full Batch Traceability</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-box-seam text-gold me-1"></i>HDPE EU Drums (20kg &amp; 200kg)</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-thermometer-half text-gold me-1"></i>Dark Climate Storage</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-qr-code text-gold me-1"></i>Full Batch Traceability</span>
                 </div>
             </div>
         </div>
@@ -108,9 +108,9 @@ require_once __DIR__ . '/includes/header.php';
                     Containers and packaging are labelled according to current international legislation (IATA, IMDG, ADR). Every batch leaves with its complete documentation bundle: Certificate of Analysis (CoA), Safety Data Sheet (MSDS), IFRA Statement, and Organic Certificates.
                 </p>
                 <div class="activity-meta-pills d-flex flex-wrap gap-2 mt-3">
-                    <span class="badge bg-light text-dark border"><i class="bi bi-airplane text-success me-1"></i>Air Freight Logistics</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-water text-success me-1"></i>Maritime Shipping</span>
-                    <span class="badge bg-light text-dark border"><i class="bi bi-file-earmark-check text-success me-1"></i>IATA / IMDG Compliant</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-airplane text-gold me-1"></i>Air Freight Logistics</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-water text-gold me-1"></i>Maritime Shipping</span>
+                    <span class="badge bg-light text-dark border"><i class="bi bi-file-earmark-check text-gold me-1"></i>IATA / IMDG Compliant</span>
                 </div>
             </div>
         </div>
