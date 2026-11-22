@@ -11,6 +11,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Direct navigation for dropdown trigger on desktop
+    const productsNavDropdown = document.getElementById('productsNavDropdown');
+    if (productsNavDropdown) {
+        productsNavDropdown.addEventListener('click', (e) => {
+            if (window.innerWidth >= 992) {
+                window.location.href = productsNavDropdown.getAttribute('href');
+            }
+        });
+    }
+
     // 2. Product Category Filter Tabs with dynamic banner title
     const filterButtons = document.querySelectorAll('.filter-btn');
     const productItems = document.querySelectorAll('.product-item');

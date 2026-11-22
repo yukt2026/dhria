@@ -15,14 +15,16 @@ $brand = [
     'tagline'     => 'Specific Essential Oils & Pure Natural Ingredients',
     'native_quote'=> 'Ny zavamanirin\'i Madagasikara',
     'description' => 'Flora-of-Madagascar (DHURIA), a company which produces and exports essential oils and pure vegetable oils from Madagascar.',
-    'phone'       => '+261 34 04 179 10',
-    'alt_phone'   => '+91 98765 43210',
+    'phone'       => '+91 9318445297',
+    'alt_phone'   => '+261 34 04 179 10',
+    'phone_clean' => '9318445297',
     'email'       => 'contact@floramad.com',
     'address'     => 'LOT V V 118 J BIS Manakambahiny, 101 Antananarivo - Madagascar',
     'hours'       => 'Mon – Fri: 8:00 AM – 5:30 PM (EAT / UTC+3)',
-    'whatsapp'    => 'https://wa.me/261340417910',
+    'whatsapp'    => 'https://wa.me/919318445297',
+    'facebook'    => 'https://www.facebook.com/profile.php?id=61594745097448',
+    'instagram'   => 'https://www.instagram.com/ayurvedadhuria/',
     'linkedin'    => 'https://www.linkedin.com',
-    'facebook'    => 'https://www.facebook.com',
     'year'        => date('Y')
 ];
 

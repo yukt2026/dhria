@@ -97,13 +97,18 @@ $prefill_subject = isset($_GET['subject']) ? trim($_GET['subject']) : '';
                     <div class="mb-4">
                         <h4 class="contact-info-title">Phone number</h4>
                         <p class="contact-info-text mb-1">
-                            <a href="tel:+261340417910" class="text-decoration-none text-muted">
-                                +261 34 04 179 10
+                            <a href="tel:+919318445297" class="text-decoration-none fw-bold" style="color: var(--floramad-green); font-size: 1.15rem;">
+                                <i class="bi bi-telephone-fill me-2"></i>+91 9318445297
+                            </a>
+                        </p>
+                        <p class="contact-info-text mb-1">
+                            <a href="https://wa.me/919318445297" target="_blank" rel="noopener" class="text-decoration-none text-success">
+                                <i class="bi bi-whatsapp me-2"></i>WhatsApp: +91 9318445297
                             </a>
                         </p>
                         <p class="contact-info-text">
-                            <a href="tel:+919876543210" class="text-decoration-none text-muted">
-                                +91 98765 43210
+                            <a href="tel:+261340417910" class="text-decoration-none text-muted small">
+                                Madagascar Direct: +261 34 04 179 10
                             </a>
                         </p>
                     </div>

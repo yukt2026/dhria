@@ -22,7 +22,7 @@ require_once __DIR__ . '/data.php';
             <!-- Column 1: Brand Info -->
             <div class="col-lg-4 col-md-6">
                 <div class="footer-brand mb-3">
-                    <img src="assets/img/logo.jpg" alt="Dhuria" class="footer-logo mb-2">
+                    <img src="assets/img/logo-dhuria.png" alt="Dhuria" class="footer-logo mb-2">
                 </div>
                 <p class="footer-desc text-muted mb-0">
                     Flora-of-Madagascar (DHURIA), a company which produces and exports essential oils from Madagascar.
@@ -42,7 +42,10 @@ require_once __DIR__ . '/data.php';
                     </li>
                     <li class="d-flex align-items-start mb-2">
                         <i class="bi bi-telephone me-3 footer-icon"></i>
-                        <a href="tel:+261340417910" class="text-decoration-none text-muted">+261 34 04 179 10</a>
+                        <div>
+                            <a href="tel:+919318445297" class="text-decoration-none text-muted fw-bold d-block">+91 9318445297</a>
+                            <a href="tel:+261340417910" class="text-decoration-none text-muted small">+261 34 04 179 10</a>
+                        </div>
                     </li>
                     <li class="d-flex align-items-start">
                         <i class="bi bi-envelope me-3 footer-icon"></i>
@@ -74,14 +77,17 @@ require_once __DIR__ . '/data.php';
             </div>
             <div class="col-md-6 text-center text-md-end">
                 <div class="footer-social-squares d-inline-flex gap-2">
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-sq social-in" title="LinkedIn" aria-label="LinkedIn">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                    <a href="https://www.facebook.com" target="_blank" rel="noopener" class="social-sq social-fb" title="Facebook" aria-label="Facebook">
+                    <a href="https://www.facebook.com/profile.php?id=61594745097448" target="_blank" rel="noopener" class="social-sq social-fb" title="Facebook" aria-label="Facebook">
                         <i class="bi bi-facebook"></i>
                     </a>
-                    <a href="https://wa.me/261340417910" target="_blank" rel="noopener" class="social-sq social-wa" title="WhatsApp" aria-label="WhatsApp">
+                    <a href="https://www.instagram.com/ayurvedadhuria/" target="_blank" rel="noopener" class="social-sq social-ig" title="Instagram" aria-label="Instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/919318445297" target="_blank" rel="noopener" class="social-sq social-wa" title="WhatsApp" aria-label="WhatsApp">
                         <i class="bi bi-whatsapp"></i>
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" rel="noopener" class="social-sq social-in" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="bi bi-linkedin"></i>
                     </a>
                 </div>
             </div>
