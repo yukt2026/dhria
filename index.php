@@ -19,14 +19,20 @@ require_once __DIR__ . '/includes/header.php';
             <!-- Slide 1: Madhucurex (Reference Image Match) -->
             <div class="carousel-item active">
                 <a href="javascript:void(0)" onclick="openQuickOrder('madhucurex-powder', 'Floramade Diabetes Pro MadHuCurex Powder', 2499, 'assets/img/ayurveda/product-madhucurex.jpg')" title="Click to Order MadhuCurex" class="d-block">
-                    <img src="assets/img/ayurveda/slider-banner-madhucurex.jpg" alt="Floramade MadhuCurex Diabetes Pro Powder - Balance your sugar naturally" class="home-slider-img">
+                    <picture>
+                        <source media="(max-width: 767.98px)" srcset="assets/img/ayurveda/slider-banner-madhucurex-mobile.jpg">
+                        <img src="assets/img/ayurveda/slider-banner-madhucurex.jpg" alt="Floramade MadhuCurex Diabetes Pro Powder - Balance your sugar naturally" class="home-slider-img">
+                    </picture>
                 </a>
             </div>
 
             <!-- Slide 2: Pilecurex Complete Kit -->
             <div class="carousel-item">
                 <a href="javascript:void(0)" onclick="openQuickOrder('pilecurex-kit', 'Floramade Pilecurex 3-in-1 Complete Treatment', 2699, 'assets/img/ayurveda/product-kit.jpg')" title="Click to Order Pilecurex Kit" class="d-block">
-                    <img src="assets/img/ayurveda/slider-banner-pilecurex.jpg" alt="Floramade Pilecurex 3-in-1 Complete Treatment Kit" class="home-slider-img">
+                    <picture>
+                        <source media="(max-width: 767.98px)" srcset="assets/img/ayurveda/slider-banner-pilecurex-mobile.jpg">
+                        <img src="assets/img/ayurveda/slider-banner-pilecurex.jpg" alt="Floramade Pilecurex 3-in-1 Complete Treatment Kit" class="home-slider-img">
+                    </picture>
                 </a>
             </div>
         </div>
@@ -89,7 +95,7 @@ require_once __DIR__ . '/includes/header.php';
             <p class="text-muted small mb-0">Browse complete range of 100% organic &amp; approved products.</p>
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pt-3">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-sm-3 g-lg-4 pt-3">
             <?php foreach ($ayurveda_products as $prod): ?>
             <div class="col">
                 <div class="floramade-product-card card h-100 shadow-sm d-flex flex-column">
@@ -278,7 +284,7 @@ require_once __DIR__ . '/includes/header.php';
      ========================================================= -->
 <section class="benefits-grid-section py-5 bg-white">
     <div class="container-xl">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-lg-4">
             <div class="col">
                 <div class="benefit-box p-4 rounded-4 border bg-cream h-100 text-center text-sm-start d-flex flex-column align-items-center align-items-sm-start">
                     <div class="benefit-icon-circle mb-3 bg-white text-gold shadow-sm">
@@ -364,7 +370,7 @@ require_once __DIR__ . '/includes/header.php';
             </p>
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-2 row-cols-lg-4 g-2 g-sm-3 g-lg-4">
             <?php foreach ($ayurveda_products as $prod): ?>
             <div class="col">
                 <div class="classic-card card h-100 border rounded-4 shadow-sm overflow-hidden d-flex flex-column bg-white">
@@ -666,5 +672,10 @@ require_once __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+
+<!-- Floating WhatsApp Consultation Button for Mobile & Desktop -->
+<a href="https://wa.me/919318445297?text=Hello%20Floramade%20Ayurveda%2C%20I%20have%20an%20inquiry%20regarding%20ayurvedic%20products." class="floating-wa-btn" target="_blank" rel="noopener" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
