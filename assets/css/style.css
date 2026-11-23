@@ -1876,3 +1876,322 @@ img {
         width: 100%;
     }
 }
+
+/* ==========================================================================
+   AYURVEDA DHURIA LUXURY E-COMMERCE DESIGN (media_1795396849519_2b4f3109.jpg)
+   Colors: Deep Midnight Navy (#0E1B2E, #132238), Honey Gold (#B88B4A, #C89B48),
+   Warm Cream (#FBF8F3), Pure White (#FFFFFF) - Zero harsh green
+   ========================================================================== */
+
+:root {
+    --ayur-navy: #0E1B2E;
+    --ayur-navy-dark: #0A1628;
+    --ayur-navy-header: #0D1D35;
+    --ayur-navy-card: #132238;
+    --ayur-gold: #B88B4A;
+    --ayur-gold-bright: #C89B48;
+    --ayur-gold-light: #DFB770;
+    --ayur-cream: #FBF8F3;
+    --ayur-sand: #F4EFE6;
+    --ayur-text-dark: #1A1A1A;
+}
+
+/* Helper Utilities */
+.bg-navy { background-color: var(--ayur-navy-header) !important; }
+.bg-navy-dark { background-color: var(--ayur-navy-dark) !important; }
+.bg-cream { background-color: var(--ayur-cream) !important; }
+.text-navy { color: var(--ayur-navy) !important; }
+.text-gold { color: var(--ayur-gold-bright) !important; }
+.bg-gold { background-color: var(--ayur-gold-bright) !important; color: #0A1628 !important; }
+.letter-spacing-1 { letter-spacing: 1px; }
+.letter-spacing-2 { letter-spacing: 2px; }
+.hover-gold:hover { color: var(--ayur-gold-bright) !important; }
+
+/* Announcement Bar */
+.top-announcement-bar {
+    background-color: var(--ayur-navy-dark);
+    font-size: 12.5px;
+    letter-spacing: 0.3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Header Navbar Overrides */
+.brand-ayur-title {
+    font-family: var(--font-serif);
+    font-size: 1.45rem;
+    letter-spacing: 1.5px;
+    line-height: 1.1;
+}
+
+.brand-tagline-sub {
+    font-size: 10px;
+    letter-spacing: 1.2px;
+}
+
+.site-header .navbar-nav .nav-link {
+    color: #E2E8F0 !important;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    font-size: 13px;
+    transition: color 0.2s ease;
+}
+
+.site-header .navbar-nav .nav-link:hover,
+.site-header .navbar-nav .nav-link.active {
+    color: var(--ayur-gold-bright) !important;
+}
+
+/* Buttons */
+.btn-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #B88B4A 100%);
+    color: #0A1628 !important;
+    border: none;
+    font-weight: 700;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.btn-gold:hover {
+    background: linear-gradient(135deg, #E5C358 0%, #C89B48 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(184, 139, 74, 0.35) !important;
+}
+
+.btn-navy {
+    background-color: var(--ayur-navy);
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.btn-navy:hover {
+    background-color: var(--ayur-navy-dark);
+    color: var(--ayur-gold-bright) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(10, 22, 40, 0.25);
+}
+
+.btn-outline-gold {
+    color: var(--ayur-gold-bright) !important;
+    border: 1.5px solid var(--ayur-gold-bright);
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: var(--ayur-gold-bright);
+    color: #0A1628 !important;
+}
+
+.btn-outline-navy {
+    color: var(--ayur-navy) !important;
+    border: 1.5px solid var(--ayur-navy);
+    background: transparent;
+    transition: all 0.25s ease;
+}
+
+.btn-outline-navy:hover {
+    background-color: var(--ayur-navy);
+    color: #FFFFFF !important;
+}
+
+/* SECTION 1: HERO SPLIT BANNER */
+.ayur-hero-section {
+    background: linear-gradient(180deg, #F9F7F3 0%, #FFFFFF 100%);
+}
+
+.hero-kit-showcase {
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.hero-kit-img {
+    height: 480px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.hero-kit-showcase:hover .hero-kit-img {
+    transform: scale(1.02);
+}
+
+.hero-cta-card {
+    background: linear-gradient(145deg, #162842 0%, #0E1B2E 100%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-card-title {
+    font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+    line-height: 1.25;
+}
+
+/* SECTION 2: HEALTH TICKER */
+.health-ticker-section {
+    background-color: #0A1628;
+}
+
+.ticker-pill {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.25s ease;
+}
+
+.ticker-pill:hover {
+    background-color: var(--ayur-gold-bright);
+    color: #0A1628 !important;
+    border-color: var(--ayur-gold-bright);
+    transform: translateY(-2px);
+}
+
+.ticker-pill:hover i {
+    color: #0A1628 !important;
+}
+
+/* SECTION 3: FEATURED BEST PRODUCTS (Colored Cards) */
+.ayur-product-card {
+    transition: transform 0.35s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.35s ease;
+}
+
+.ayur-product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(14, 27, 46, 0.16) !important;
+}
+
+.ayur-prod-img-box {
+    min-height: 220px;
+}
+
+.ayur-prod-img {
+    max-height: 200px;
+    object-fit: contain;
+    transition: transform 0.35s ease;
+}
+
+.ayur-product-card:hover .ayur-prod-img {
+    transform: scale(1.06);
+}
+
+.ayur-prod-body {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* SECTION 4: BOTANICAL RIBBON */
+.botanical-ribbon-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 240px;
+    display: flex;
+    align-items: center;
+}
+
+/* SECTION 6: DOCTOR TRUST CARD */
+.doctor-trust-card {
+    background: linear-gradient(135deg, #132238 0%, #0A1628 100%);
+    border: 1px solid rgba(200, 155, 72, 0.3);
+}
+
+/* SECTION 7: BENEFITS 4-BOX */
+.benefit-icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(184, 139, 74, 0.2);
+}
+
+.benefit-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* SECTION 8: WHY CHOOSE */
+.why-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* SECTION 10 & 12: PRODUCT SPOTLIGHT */
+.spotlight-card {
+    border-radius: 20px;
+}
+
+.spotlight-visual-box {
+    border-radius: 16px;
+    box-shadow: inset 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.spotlight-main-img {
+    transition: transform 0.35s ease;
+}
+
+.spotlight-visual-box:hover .spotlight-main-img {
+    transform: scale(1.04);
+}
+
+.spotlight-thumbs img {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    transition: all 0.2s ease;
+}
+
+.spotlight-thumbs img:hover {
+    border-color: var(--ayur-gold-bright) !important;
+    transform: scale(1.1);
+}
+
+/* SECTION 13: TESTIMONIALS */
+.testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .hero-kit-img {
+        height: 340px;
+    }
+    .hero-cta-card {
+        padding: 24px !important;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-kit-img {
+        height: 260px;
+    }
+    .brand-ayur-title {
+        font-size: 1.15rem;
+    }
+    .hero-card-title {
+        font-size: 1.45rem;
+    }
+    .ayur-prod-img-box {
+        min-height: 180px;
+    }
+    .ayur-prod-img {
+        max-height: 160px;
+    }
+    .doctor-avatar-wrap {
+        width: 140px !important;
+        height: 140px !important;
+    }
+}
+

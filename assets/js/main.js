@@ -243,3 +243,71 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// 6. Global Quick Order Modal Handlers for Ayurveda Products
+function openQuickOrder(id, name, price, img) {
+    const modalEl = document.getElementById('quickOrderModal');
+    if (!modalEl) return;
+
+    const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+    
+    const idInput = document.getElementById('orderProductId');
+    const nameEl = document.getElementById('orderProductName');
+    const priceEl = document.getElementById('orderProductPrice');
+    const imgEl = document.getElementById('orderProductImg');
+    const successMsg = document.getElementById('orderSuccessMsg');
+    
+    if (idInput) idInput.value = id;
+    if (nameEl) nameEl.textContent = name;
+    if (priceEl) priceEl.textContent = '₹' + Number(price).toLocaleString('en-IN');
+    if (imgEl && img) imgEl.src = img;
+    if (successMsg) successMsg.classList.add('d-none');
+
+    modal.show();
+}
+
+function sendOrderViaWhatsApp() {
+    const name = document.getElementById('orderCustName')?.value.trim() || 'Valued Customer';
+    const phone = document.getElementById('orderCustPhone')?.value.trim() || '';
+    const address = document.getElementById('orderCustAddress')?.value.trim() || 'Address not provided yet';
+    const prodName = document.getElementById('orderProductName')?.textContent.trim() || 'Dhuria Ayurvedic Product';
+    const prodPrice = document.getElementById('orderProductPrice')?.textContent.trim() || '';
+    const payment = document.querySelector('input[name="orderPayment"]:checked')?.value || 'Cash on Delivery (COD)';
+
+    if (!phone) {
+        alert('Please enter your 10-digit mobile number so we can process your order.');
+        document.getElementById('orderCustPhone')?.focus();
+        return;
+    }
+
+    const message = `*NEW AYURVEDIC ORDER REQUEST*\n` +
+                    `--------------------------------\n` +
+                    `*Product:* ${prodName}\n` +
+                    `*Price:* ${prodPrice}\n` +
+                    `*Patient Name:* ${name}\n` +
+                    `*Phone:* ${phone}\n` +
+                    `*Delivery Address:* ${address}\n` +
+                    `*Payment Method:* ${payment}\n` +
+                    `--------------------------------\n` +
+                    `Please confirm order dispatch and delivery timeline.`;
+
+    const waUrl = `https://wa.me/919318445297?text=${encodeURIComponent(message)}`;
+    window.open(waUrl, '_blank');
+}
+
+function submitQuickOrder() {
+    const name = document.getElementById('orderCustName')?.value.trim();
+    const phone = document.getElementById('orderCustPhone')?.value.trim();
+    const address = document.getElementById('orderCustAddress')?.value.trim();
+    const successMsg = document.getElementById('orderSuccessMsg');
+
+    if (!name || !phone || !address) {
+        alert('Please fill all required fields (Name, Phone, Address).');
+        return;
+    }
+
+    if (successMsg) {
+        successMsg.classList.remove('d-none');
+    }
+}
+

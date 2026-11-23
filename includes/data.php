@@ -854,3 +854,211 @@ $certifications = [
         'logo'  => 'assets/img/certifications/eu-organic.svg'
     ]
 ];
+
+/* ---------------------------------------------------------
+ * AYURVEDA DHURIA / FLORAMADE E-COMMERCE PRODUCTS & CONTENT
+ * Matching Reference Design media_1795396849519_2b4f3109.jpg
+ * --------------------------------------------------------- */
+$ayurveda_categories = [
+    ['name' => 'DIGESTION', 'slug' => 'digestion', 'icon' => 'bi-heart-pulse'],
+    ['name' => 'JOINT CARE', 'slug' => 'joint-care', 'icon' => 'bi-bandaid'],
+    ['name' => 'LIVER CARE', 'slug' => 'liver-care', 'icon' => 'bi-shield-plus'],
+    ['name' => 'PILES CARE', 'slug' => 'piles-care', 'icon' => 'bi-capsule-pill'],
+    ['name' => 'IMMUNITY', 'slug' => 'immunity', 'icon' => 'bi-shield-check'],
+    ['name' => 'SHILAJIT', 'slug' => 'shilajit', 'icon' => 'bi-lightning-charge'],
+    ['name' => 'HAIR CARE', 'slug' => 'hair-care', 'icon' => 'bi-stars']
+];
+
+$ayurveda_products = [
+    [
+        'id'             => 'chooran-multivitamin',
+        'name'           => 'CHOORAN & MULTIVITAMIN POWDER',
+        'brand_title'    => 'DHURIA CHOORAN & MULTIVITAMIN POWDER',
+        'tagline'        => 'Ancient Digestive Chooran & Vital Nutritive Blend',
+        'category'       => 'DIGESTION & GUT HEALTH',
+        'price'          => 499,
+        'original_price' => 699,
+        'discount'       => '28% OFF',
+        'rating'         => 4.9,
+        'rating_count'   => 540,
+        'badge'          => 'BEST SELLER',
+        'theme_color'    => '#C48A2B',
+        'card_bg'        => '#C48A2B',
+        'image'          => 'assets/img/ayurveda/product-chooran.jpg',
+        'thumbnails'     => [
+            'assets/img/ayurveda/product-chooran.jpg',
+            'assets/img/ayurveda/product-capsules.jpg',
+            'assets/img/ayurveda/proc-craft.jpg'
+        ],
+        'weight'         => '250g Luxury Jar',
+        'dosage'         => '1 teaspoon (3-5g) twice daily with lukewarm water after meals or at bedtime.',
+        'ingredients'    => 'Triphala (Haritaki, Bibhitaki, Amalaki), Shatavari, Ashwagandha, Saunf, Jeera, Ajwain, Sendha Namak & Yashtimadhu',
+        'benefits'       => [
+            'Relieves chronic constipation, acidity, bloating & gas within 24 hours',
+            'Enriched with natural Vitamin C, minerals & digestive bio-enzymes',
+            'Soothes the mucosal gut lining and promotes healthy gut microbiome',
+            '100% Shastric Ayurvedic formula — non-habit forming and sugar-free'
+        ]
+    ],
+    [
+        'id'             => 'kabz-mukti-capsules',
+        'name'           => 'KABZ-MUKTI AYURVEDIC CAPSULES',
+        'brand_title'    => 'DHURIA KABZ-MUKTI AYURVEDIC CAPSULES',
+        'tagline'        => 'Gentle Overnight Relief & Colon Cleansing Formulation',
+        'category'       => 'DIGESTION & CONSTIPATION',
+        'price'          => 399,
+        'original_price' => 599,
+        'discount'       => '33% OFF',
+        'rating'         => 4.8,
+        'rating_count'   => 420,
+        'badge'          => 'DOCTOR RECOMMENDED',
+        'theme_color'    => '#1E4E3E',
+        'card_bg'        => '#1E4E3E',
+        'image'          => 'assets/img/ayurveda/product-capsules.jpg',
+        'thumbnails'     => [
+            'assets/img/ayurveda/product-capsules.jpg',
+            'assets/img/ayurveda/product-chooran.jpg',
+            'assets/img/ayurveda/hero-ayurveda-kit.jpg'
+        ],
+        'weight'         => '60 Veg Capsules',
+        'dosage'         => '1 to 2 capsules with warm water at bedtime.',
+        'ingredients'    => 'Sanay Leaves Extract, Nishoth, Haritaki, Erand Oil Extract, Bel Patra & Ajwain',
+        'benefits'       => [
+            'Effortless morning bowel clearance without stomach cramps',
+            'Softens stool naturally to prevent straining and anal fissures',
+            'Improves peristaltic bowel movement and eliminates toxins (Ama)',
+            'Safe for long-term daily consumption without dependence'
+        ]
+    ],
+    [
+        'id'             => 'pilecurex-kit',
+        'name'           => 'PILECUREX 3-IN-1 COMPLETE KIT',
+        'brand_title'    => 'DHURIA PILECUREX 3-IN-1 COMPLETE TREATMENT',
+        'tagline'        => 'Holistic 30-Day Therapeutic Solution for Piles, Fissures & Fistula',
+        'category'       => 'PILES & ANORECTAL WELLNESS',
+        'price'          => 1299,
+        'original_price' => 1899,
+        'discount'       => '31% OFF',
+        'rating'         => 5.0,
+        'rating_count'   => 1280,
+        'badge'          => 'HOT DEAL',
+        'theme_color'    => '#3E6F8E',
+        'card_bg'        => '#3E6F8E',
+        'image'          => 'assets/img/ayurveda/product-kit.jpg',
+        'thumbnails'     => [
+            'assets/img/ayurveda/product-kit.jpg',
+            'assets/img/ayurveda/hero-ayurveda-kit.jpg',
+            'assets/img/ayurveda/product-capsules.jpg',
+            'assets/img/ayurveda/product-chooran.jpg'
+        ],
+        'weight'         => 'Complete 30-Day Course (Syrup + Capsules + Chooran)',
+        'dosage'         => 'Capsules: 1 cap twice daily after meals; Chooran: 1 tsp at bedtime with warm water; Syrup: 10ml twice daily.',
+        'ingredients'    => 'Neem, Nagkesar, Rasont, Daruharidra, Triphala, Haritaki, Guggal & Karanj Seed',
+        'benefits'       => [
+            'Stops rectal bleeding and alleviates burning pain within 3-7 days',
+            'Shrinks hemorrhoidal pile masses and strengthens anal veins',
+            'Treats root cause by permanently relieving chronic constipation',
+            'Clinically trusted alternative to painful surgical procedures'
+        ]
+    ],
+    [
+        'id'             => 'shilajit-canister',
+        'name'           => 'SHILAJIT & ASHWAGANDHA VITALITY',
+        'brand_title'    => 'DHURIA PURE SHILAJIT & ASHWAGANDHA CANISTER',
+        'tagline'        => 'High-Altitude Himalayan Shilajit with KSM-66 Ashwagandha',
+        'category'       => 'STAMINA, STRENGTH & IMMUNITY',
+        'price'          => 799,
+        'original_price' => 1199,
+        'discount'       => '33% OFF',
+        'rating'         => 4.9,
+        'rating_count'   => 890,
+        'badge'          => 'PREMIUM GOLD',
+        'theme_color'    => '#132238',
+        'card_bg'        => '#132238',
+        'image'          => 'assets/img/ayurveda/product-shilajit.jpg',
+        'thumbnails'     => [
+            'assets/img/ayurveda/product-shilajit.jpg',
+            'assets/img/ayurveda/proc-craft.jpg',
+            'assets/img/ayurveda/product-chooran.jpg'
+        ],
+        'weight'         => '250g Luxury Airtight Canister',
+        'dosage'         => '1 scoop (approx 3g) daily mixed with warm milk or lukewarm water before bedtime.',
+        'ingredients'    => 'Purified Himalayan Shilajit (>75% Fulvic Acid), Standardized Ashwagandha Root Extract, Safed Musli, Gokshura & Kaunch Beej',
+        'benefits'       => [
+            'Elevates cellular energy, stamina and peak physical endurance',
+            'Rich in 84+ essential trace minerals and high fulvic acid content',
+            'Reduces cortisol stress levels and supports peaceful deep sleep',
+            'Boosts male and female vitality, metabolism and cellular rejuvenation'
+        ]
+    ]
+];
+
+$ayurveda_testimonials = [
+    [
+        'name'        => 'Ramesh Verma',
+        'location'    => 'Jaipur, Rajasthan',
+        'rating'      => 5,
+        'badge'       => 'Verified Buyer',
+        'product'     => 'Pilecurex 3-in-1 Kit',
+        'comment'     => 'I was suffering from bleeding piles for nearly 2 years and was recommended surgery. Dhuria Pilecurex kit brought noticeable relief in just 6 days. Bleeding stopped completely, pain vanished, and my digestion is normalized. Forever grateful!',
+        'avatar_text' => 'RV'
+    ],
+    [
+        'name'        => 'Priya Sharma',
+        'location'    => 'New Delhi',
+        'rating'      => 5,
+        'badge'       => 'Verified Buyer',
+        'product'     => 'Chooran & Multivitamin Powder',
+        'comment'     => 'The Ayurvedic Chooran is truly magical! No more morning bloating, no acidity throughout the day. It tastes very authentic and natural. Both my husband and I have made it our daily evening routine.',
+        'avatar_text' => 'PS'
+    ],
+    [
+        'name'        => 'Col. R. K. Nair',
+        'location'    => 'Bengaluru, Karnataka',
+        'rating'      => 5,
+        'badge'       => 'Verified Buyer',
+        'product'     => 'Shilajit & Ashwagandha Canister',
+        'comment'     => 'The pure Shilajit canister quality is superb. Genuine Himalayan resin profile, easily dissolves, and boosts energy levels without any palpitations. Fast delivery and commendable customer care on WhatsApp!',
+        'avatar_text' => 'RN'
+    ]
+];
+
+$ayurveda_why_choose = [
+    [
+        'title' => 'Ethical Herbal Sourcing',
+        'desc'  => 'Wild-crafted organic botanicals hand-harvested from pristine Himalayan valleys and traditional certified herbal farms.',
+        'tag'   => '100% PURE BOTANICALS',
+        'icon'  => 'bi-flower2'
+    ],
+    [
+        'title' => 'Authentic Heritage Craft',
+        'desc'  => 'Prepared following ancient Shastric Ayurvedic Granthas with authentic bhavana, traditional decoctions, and copper/brass vessels.',
+        'tag'   => 'TIME-TESTED CRAFT',
+        'icon'  => 'bi-mortarboard'
+    ],
+    [
+        'title' => 'GMP & ISO Certified Lab',
+        'desc'  => 'Manufactured in state-of-the-art sterile facilities adhering to strict Good Manufacturing Practices and hygienic standards.',
+        'tag'   => 'MODERN LAB QUALITY',
+        'icon'  => 'bi-shield-check'
+    ],
+    [
+        'title' => 'Rigorous Batch Testing',
+        'desc'  => 'Each batch is independently lab-tested for heavy metals, microbial safety, and active phytochemical purity markers.',
+        'tag'   => 'ZERO HEAVY METALS',
+        'icon'  => 'bi-clipboard2-pulse'
+    ],
+    [
+        'title' => 'UV-Shielded Packaging',
+        'desc'  => 'Packed in dark amber and airtight containers to prevent oxidation and ensure active therapeutic potency remains intact.',
+        'tag'   => 'POTENCY PRESERVED',
+        'icon'  => 'bi-box-seam'
+    ],
+    [
+        'title' => 'Free Doctor Guidance',
+        'desc'  => 'Experienced Ayurvedic Vaidyas available on call (+91 9318445297) for personalized lifestyle, diet, and dosage consultation.',
+        'tag'   => 'EXPERT VAIDYA CARE',
+        'icon'  => 'bi-heart-pulse'
+    ]
+];
+
