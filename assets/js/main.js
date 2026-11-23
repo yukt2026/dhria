@@ -311,3 +311,22 @@ function submitQuickOrder() {
     }
 }
 
+// 7. Wishlist Heart Button Toggle
+function toggleWishlist(btn) {
+    if (!btn) return;
+    btn.classList.toggle('active');
+    const icon = btn.querySelector('i');
+    if (icon) {
+        if (btn.classList.contains('active')) {
+            icon.classList.remove('bi-heart');
+            icon.classList.add('bi-heart-fill');
+            icon.style.color = '#E53E3E';
+        } else {
+            icon.classList.remove('bi-heart-fill');
+            icon.classList.add('bi-heart');
+            icon.style.color = '';
+        }
+    }
+}
+
+

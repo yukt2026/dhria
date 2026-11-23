@@ -4,81 +4,60 @@ require_once __DIR__ . '/includes/header.php';
 ?>
 
 <!-- =========================================================
-     SECTION 1: HERO SPLIT BANNER (Pilecurex 3-in-1 Showcase)
+     SECTION 1: FULL-WIDTH SLIDER BANNER (Reference Design)
      ========================================================= -->
-<section class="ayur-hero-section py-4 py-lg-5">
-    <div class="container-xl">
-        <div class="row g-4 align-items-center">
-            <!-- Left: Hero Kit Visual Showcase -->
-            <div class="col-lg-7 col-12">
-                <div class="hero-kit-showcase position-relative overflow-hidden rounded-4 shadow-sm">
-                    <img src="assets/img/ayurveda/hero-ayurveda-kit.jpg" alt="Dhuria Ayurveda Pilecurex Complete Kit" class="img-fluid w-100 hero-kit-img">
-                    <div class="hero-kit-badge-float position-absolute bottom-0 start-0 m-3 p-2 px-3 bg-white bg-opacity-95 rounded-3 shadow-sm d-none d-sm-flex align-items-center gap-2">
-                        <i class="bi bi-patch-check-fill text-gold fs-4"></i>
-                        <div>
-                            <span class="d-block fw-bold small text-dark">100% Shastric Ayurvedic Medicine</span>
-                            <span class="text-muted" style="font-size: 11px;">Certified Formulation &bull; Zero Side Effects</span>
-                        </div>
-                    </div>
-                </div>
+<section class="home-slider-banner position-relative">
+    <div id="homeHeroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <!-- Indicators / Dots -->
+        <div class="carousel-indicators slider-indicators-dots">
+            <button type="button" data-bs-target="#homeHeroSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#homeHeroSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <!-- Slide 1: Madhucurex (Reference Image Match) -->
+            <div class="carousel-item active">
+                <a href="javascript:void(0)" onclick="openQuickOrder('madhucurex-powder', 'Floramade Diabetes Pro MadHuCurex Powder', 2499, 'assets/img/ayurveda/product-madhucurex.jpg')" title="Click to Order MadhuCurex" class="d-block">
+                    <img src="assets/img/ayurveda/slider-banner-madhucurex.jpg" alt="Floramade MadhuCurex Diabetes Pro Powder - Balance your sugar naturally" class="home-slider-img">
+                </a>
             </div>
 
-            <!-- Right: Hero CTA & Product Card -->
-            <div class="col-lg-5 col-12">
-                <div class="hero-cta-card p-4 p-xl-5 text-white rounded-4 shadow-lg">
-                    <div class="d-flex align-items-center gap-2 mb-2">
-                        <span class="badge bg-gold text-dark px-3 py-2 fw-bold text-uppercase letter-spacing-1">PILECUREX KIT</span>
-                        <span class="badge bg-white bg-opacity-20 text-white px-2 py-1 small"><i class="bi bi-clock-history me-1"></i> 30 Days Course</span>
-                    </div>
-
-                    <h1 class="hero-card-title font-serif fw-bold text-white mb-2">
-                        Complete 30-Day Ayurvedic Relief Formulation
-                    </h1>
-                    <p class="hero-card-subtitle text-white-50 mb-3 small" style="line-height: 1.7;">
-                        Clinically proven herbal formulation for chronic piles, bleeding hemorrhoids, anal fissures, burning sensation, and chronic constipation.
-                    </p>
-
-                    <!-- Rating & Reviews -->
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <div class="text-warning small">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <span class="fw-bold small text-white">4.9 / 5.0</span>
-                        <span class="text-white-50 small">(1,280+ Verified Patients)</span>
-                    </div>
-
-                    <!-- Pricing Block -->
-                    <div class="hero-price-wrap d-flex align-items-baseline gap-3 mb-4">
-                        <span class="fs-2 fw-bold text-gold">₹1,299</span>
-                        <span class="text-white-50 text-decoration-line-through">₹1,899</span>
-                        <span class="badge bg-danger text-white px-2 py-1 small">31% OFF</span>
-                    </div>
-
-                    <!-- Action Buttons -->
-                    <div class="d-grid gap-2 mb-4">
-                        <button type="button" onclick="openQuickOrder('pilecurex-kit', 'DHURIA PILECUREX 3-IN-1 COMPLETE KIT', 1299, 'assets/img/ayurveda/hero-ayurveda-kit.jpg')" class="btn btn-gold btn-lg fw-bold py-3 text-uppercase letter-spacing-1 shadow">
-                            <i class="bi bi-bag-check-fill me-2"></i> ORDER NOW
-                        </button>
-                        <a href="https://wa.me/919318445297?text=Hello%20Dhuria%20Ayurveda%2C%20I%20want%20to%20know%20more%20about%20Pilecurex%20Kit." target="_blank" rel="noopener" class="btn btn-outline-light py-2 small">
-                            <i class="bi bi-whatsapp text-success me-2"></i> Free Doctor Consultation on WhatsApp
-                        </a>
-                    </div>
-
-                    <!-- Trust Bar Below Button -->
-                    <div class="hero-card-trust-row pt-3 border-top border-white border-opacity-10 d-flex justify-content-between align-items-center flex-wrap gap-2 text-white-50 small">
-                        <span><i class="bi bi-shield-check text-gold me-1"></i> GMP Certified</span>
-                        <span><i class="bi bi-people-fill text-gold me-1"></i> 25,000+ Customers</span>
-                        <span><i class="bi bi-truck text-gold me-1"></i> COD Available</span>
-                    </div>
-                </div>
+            <!-- Slide 2: Pilecurex Complete Kit -->
+            <div class="carousel-item">
+                <a href="javascript:void(0)" onclick="openQuickOrder('pilecurex-kit', 'Floramade Pilecurex 3-in-1 Complete Treatment', 2699, 'assets/img/ayurveda/product-kit.jpg')" title="Click to Order Pilecurex Kit" class="d-block">
+                    <img src="assets/img/ayurveda/slider-banner-pilecurex.jpg" alt="Floramade Pilecurex 3-in-1 Complete Treatment Kit" class="home-slider-img">
+                </a>
             </div>
         </div>
+
+        <!-- Controls: Prev / Next Arrow Buttons -->
+        <button class="carousel-control-prev slider-ctrl-btn position-absolute start-0 ms-2 ms-md-4" type="button" data-bs-target="#homeHeroSlider" data-bs-slide="prev" aria-label="Previous Slide">
+            <i class="bi bi-chevron-left fs-5"></i>
+        </button>
+        <button class="carousel-control-next slider-ctrl-btn position-absolute end-0 me-2 me-md-4" type="button" data-bs-target="#homeHeroSlider" data-bs-slide="next" aria-label="Next Slide">
+            <i class="bi bi-chevron-right fs-5"></i>
+        </button>
     </div>
 </section>
+
+<!-- =========================================================
+     TRUST STRIP (Matching Reference Image directly below banner)
+     ========================================================= -->
+<div class="trust-strip-bar py-3 px-2">
+    <div class="container-fluid px-lg-4">
+        <div class="d-flex align-items-center justify-content-between flex-nowrap overflow-x-auto gap-4 py-1 text-nowrap scrollbar-none">
+            <div class="trust-item"><i class="bi bi-patch-check-fill"></i> <span>100% Ayurvedic</span></div>
+            <div class="trust-item"><i class="bi bi-award-fill"></i> <span>Certified &amp; Trusted</span></div>
+            <div class="trust-item"><i class="bi bi-shield-lock-fill"></i> <span>Safe Payment</span></div>
+            <div class="trust-item"><i class="bi bi-headset"></i> <span>Online Support</span></div>
+            <div class="trust-item"><i class="bi bi-truck"></i> <span>Free Express Shipping</span></div>
+            <div class="trust-item"><i class="bi bi-droplet-half"></i> <span>Lab Tested &amp; Pure</span></div>
+            <div class="trust-item"><i class="bi bi-patch-check-fill"></i> <span>100% Ayurvedic</span></div>
+            <div class="trust-item"><i class="bi bi-award-fill"></i> <span>Certified &amp; Trusted</span></div>
+        </div>
+    </div>
+</div>
 
 <!-- =========================================================
      SECTION 2: HEALTH CONCERNS TICKER / PILLS STRIP
@@ -101,65 +80,72 @@ require_once __DIR__ . '/includes/header.php';
 </section>
 
 <!-- =========================================================
-     SECTION 3: FEATURED BEST PRODUCTS (4 Color Cards Grid)
+     SECTION 3: FEATURED BEST PRODUCTS (Improved Cards Design)
      ========================================================= -->
-<section id="featured-products" class="featured-products-section py-5 bg-cream">
+<section id="featured-products" class="featured-products-section py-5 bg-white">
     <div class="container-xl">
-        <div class="section-heading text-center mb-5">
-            <span class="text-gold text-uppercase fw-bold small letter-spacing-1 d-block mb-1">Authentic Shastric Formulations</span>
-            <h2 class="font-serif fw-bold text-navy display-6">FEATURED BEST PRODUCTS</h2>
-            <p class="text-muted mx-auto" style="max-width: 650px;">
-                Hand-formulated with wild-crafted herbs and tested active bio-compounds for everyday vitality, digestion, and chronic relief.
-            </p>
+        <div class="section-heading text-center mb-4">
+            <h2 class="fw-bold text-dark mb-1" style="font-size: clamp(1.8rem, 3vw, 2.3rem);">Featured Best Products</h2>
+            <p class="text-muted small mb-0">Browse complete range of 100% organic &amp; approved products.</p>
         </div>
 
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4 pt-3">
             <?php foreach ($ayurveda_products as $prod): ?>
             <div class="col">
-                <div class="ayur-product-card card h-100 border-0 rounded-4 shadow-sm overflow-hidden d-flex flex-column" style="background-color: <?= htmlspecialchars($prod['card_bg']); ?>;">
-                    <!-- Badge & Category -->
-                    <div class="p-3 d-flex justify-content-between align-items-center text-white">
-                        <span class="badge bg-white bg-opacity-20 text-white small px-2 py-1"><?= htmlspecialchars($prod['category']); ?></span>
-                        <span class="badge bg-gold text-dark fw-bold small"><?= htmlspecialchars($prod['badge']); ?></span>
+                <div class="floramade-product-card card h-100 shadow-sm d-flex flex-column">
+                    <!-- Top Colored Visual Box -->
+                    <div class="floramade-prod-top" style="background-color: <?= htmlspecialchars($prod['card_bg']); ?>;">
+                        <?php if (!empty($prod['is_kit'])): ?>
+                        <span class="kit-badge-pill">Kit</span>
+                        <?php endif; ?>
+                        
+                        <!-- Wishlist Heart Button -->
+                        <button type="button" class="wishlist-btn" onclick="toggleWishlist(this)" title="Save to Wishlist" aria-label="Save to Wishlist">
+                            <i class="bi bi-heart"></i>
+                        </button>
+
+                        <!-- Product Image -->
+                        <img src="<?= htmlspecialchars($prod['image']); ?>" alt="<?= htmlspecialchars($prod['name']); ?>" class="floramade-prod-img img-fluid">
                     </div>
 
-                    <!-- Product Image Container -->
-                    <div class="ayur-prod-img-box px-3 py-2 text-center flex-grow-1 d-flex align-items-center justify-content-center">
-                        <img src="<?= htmlspecialchars($prod['image']); ?>" alt="<?= htmlspecialchars($prod['name']); ?>" class="img-fluid ayur-prod-img rounded-3">
-                    </div>
-
-                    <!-- Bottom White Content Block -->
-                    <div class="ayur-prod-body bg-white p-3 p-xl-4 rounded-bottom-4 d-flex flex-column">
-                        <h5 class="ayur-prod-title font-serif text-dark fw-bold mb-1" style="min-height: 48px; font-size: 1.05rem;">
+                    <!-- Bottom Content Block -->
+                    <div class="floramade-prod-info d-flex flex-column flex-grow-1">
+                        <h5 class="floramade-prod-name">
                             <?= htmlspecialchars($prod['name']); ?>
                         </h5>
-                        <p class="small text-muted mb-2 text-truncate"><?= htmlspecialchars($prod['tagline']); ?></p>
 
-                        <!-- Rating & Reviews -->
-                        <div class="d-flex align-items-center gap-1 mb-2 small text-warning">
+                        <!-- Star Rating -->
+                        <div class="floramade-stars">
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
-                            <span class="text-muted ms-1 small">(<?= $prod['rating_count']; ?>)</span>
+                            <span class="text-dark fw-bold small ms-1"><?= $prod['rating']; ?></span>
+                            <span class="text-muted small">(<?= $prod['rating_count']; ?>)</span>
                         </div>
 
-                        <!-- Price and Discount -->
-                        <div class="d-flex align-items-baseline gap-2 mb-3">
-                            <span class="fs-5 fw-bold text-navy">₹<?= number_format($prod['price']); ?></span>
-                            <span class="text-muted small text-decoration-line-through">₹<?= number_format($prod['original_price']); ?></span>
-                            <span class="badge bg-success-subtle text-success small ms-auto"><?= htmlspecialchars($prod['discount']); ?></span>
+                        <!-- Price -->
+                        <div class="floramade-price-wrap mt-auto">
+                            <span class="floramade-current-price">₹<?= number_format($prod['price']); ?></span>
+                            <span class="floramade-old-price">₹<?= number_format($prod['original_price']); ?></span>
                         </div>
 
-                        <!-- Instant Action Button -->
-                        <button type="button" onclick="openQuickOrder('<?= htmlspecialchars($prod['id']); ?>', '<?= htmlspecialchars(addslashes($prod['brand_title'])); ?>', <?= $prod['price']; ?>, '<?= htmlspecialchars($prod['image']); ?>')" class="btn btn-gold w-100 fw-bold py-2 text-uppercase small letter-spacing-1 mt-auto shadow-sm">
-                            <i class="bi bi-cart-plus me-1"></i> BUY NOW
+                        <!-- Add to Bag Gold Button -->
+                        <button type="button" onclick="openQuickOrder('<?= htmlspecialchars($prod['id']); ?>', '<?= htmlspecialchars(addslashes($prod['brand_title'])); ?>', <?= $prod['price']; ?>, '<?= htmlspecialchars($prod['image']); ?>')" class="btn btn-gold-bag">
+                            <i class="bi bi-bag me-2"></i>ADD TO BAG
                         </button>
                     </div>
                 </div>
             </div>
             <?php endforeach; ?>
+        </div>
+
+        <!-- Centered View Complete Collection Button -->
+        <div class="text-center mt-5">
+            <a href="products.php" class="btn btn-outline-dark rounded-pill px-4 py-2 border-2">
+                <span class="small fw-bold">View Complete Collection</span> <i class="bi bi-arrow-right ms-2"></i>
+            </a>
         </div>
     </div>
 </section>
